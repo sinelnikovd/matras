@@ -1,0 +1,157 @@
+extends ./template/template.jade
+
+block title
+	title Главная страница
+
+block content
+	.section-hits
+		.container
+			h2.section-hits__title Хиты продаж
+			.product-cards.section-hits__product-cards
+				include ./template/product-card.jade
+				include ./template/product-card.jade
+				include ./template/product-card.jade
+				include ./template/product-card.jade
+				include ./template/product-card.jade
+				include ./template/product-card.jade
+			a(href="#").section-hits__link Смотреть все
+	.section-popular-size
+		.container
+			h2.section-popular-size__title Популярные размеры матрасов
+			ul.popular-size.section-popular-size__popular-size
+				li.popular-size__item.popular-size__item_first
+					a(href="#").popular-size__link 160x145
+				li.popular-size__item
+					a(href="#").popular-size__link 160x145
+				li.popular-size__item
+					a(href="#").popular-size__link 160x145
+				li.popular-size__item.popular-size__item_last
+					a(href="#").popular-size__link 160x145
+			a(href="#").section-popular-size__link Открыть все
+	.section-main-about
+		.container
+			h2.section-main-about__title О нас
+			.about-items
+				.about-item
+					span.about-item__number 1
+					p.about-item__text Не стандартные размеры без предоплаты
+				.about-item
+					span.about-item__number 2
+					p.about-item__text Гарантия лучшей цены
+				.about-item
+					span.about-item__number 3
+					p.about-item__text Доставка по всей России
+				.about-item
+					span.about-item__number 4
+					p.about-item__text Скидки до 50%
+				.about-item
+					span.about-item__number 5
+					p.about-item__text Работаем без выходных
+				.about-item
+					span.about-item__number 6
+					p.about-item__text Фирменная гарантия на всю продукцию
+			a(href="#").section-main-about__link Узнать больше
+	include ./template/footer.jade
+	include ./template/social.jade
+	.banner
+		.container
+			span.banner__close
+			a(href="#").banner__link
+				img(src="img/banners.jpg", alt="").banner__picture
+				span.banner__text Суперакция: матрасы Promtex Orient со скидкой до 45%
+
+	include ./template/cart.jade
+
+
+block popup
+	.cart-popup
+		h2.cart-popup__title Корзина
+		p.cart-popup__description В случае, если у Вас появились какие то проблемы 
+			a(href="tel:+74953572984").cart-popup__calllink +7(495) 357-29-84
+		include ./template/cart-item.jade
+		include ./template/cart-item.jade
+		.cart-popup__footer
+			.cart-total
+				span.cart-total__title Итого:
+				ul.cart-total__price
+					li.cart-total__oldprice 48 996 руб.
+					li.cart-total__newprice 39 992 руб.
+			form(action="/").cart-form.cart-popup__form
+				i.icon.icon_phone.cart-form__icon
+				input(type="text" placeholder="Введите телефон").cart-form__input.data-inputmask
+				button(type="submit").button.button_green.cart-form__button Оформить заказ
+			p.cart-popup__text
+				a(href="javascript:void();").cart-popup__link Заполнить самостоятельно
+
+
+	.decor-popup
+		h2.decor-popup__title Оформление заказа
+		form(action="/").decor-popup__form
+			label.decor-popup__label Ваше имя и фамилия*
+				input(type="text").decor-popup__input
+			p.decor-popup__clarification Необходимы для заполнения гарантии
+			label.decor-popup__label Телефон*
+				input(type="text").decor-popup__input
+			p.decor-popup__clarification Желательно указать несколько телефонов
+			label.decor-popup__label Адрес доставки*
+				textarea(name="", rows="4").decor-popup__textarea
+			p.decor-popup__optional Необязательные поля
+			label.decor-popup__label.decor-popup__label_margin_bottom E-mail
+				input(type="text").decor-popup__input
+			label.decor-popup__label Примечания
+				textarea(name="", rows="4").decor-popup__textarea
+			button(type="submit").button.button_green.decor-popup__button Отправить заказ
+
+	.product-popup
+		h2.product-popup__title Матрас Virtuoz Респект
+		.product-carousel.product-popup__carousel
+			.product-carousel__items
+				img(src="img/slide1.jpg", alt="")
+				img(src="img/slide2.jpg", alt="")
+				img(src="img/slide3.jpg", alt="")
+				img(src="img/slide4.jpg", alt="")
+			.product-carousel__navigation
+				.product-carousel__prev
+					i.icon.icon_prev
+				.product-carousel__next
+					i.icon.icon_next
+		.product-popup-form.product-popup__form
+			.product-popup-form__block
+				.product-popup-form__part.product-popup-form__part_left
+					.product-popup-form__newprice 7 500
+						i.rubl
+					.product-popup-form__oldprice 10 500
+						i.rubl
+				.product-popup-form__part.product-popup-form__part_right
+					.product-popup-form__availability
+						i.icon.icon_ok
+						| В наличие
+			.hr.product-popup-form__hr
+			.product-popup-form__block
+				.product-popup-form__part.product-popup-form__part_left
+					label.product-popup-form__label Выберете размер
+						select.product-popup__select
+							option(value="1") Любой
+							option(value="1") Другой
+							option(value="1") Всякий
+				.product-popup-form__part.product-popup-form__part_right
+					p.product-popup-form__question Нужен другой размер?
+					button.button.product-popup-form__button.product-popup-form__button_call Позвонить
+			.hr.product-popup-form__hr
+			.product-popup-form__block
+				.product-popup-form__part.product-popup-form__part_left
+					button.button.button_red.product-popup-form__button Добавить в корзину
+				.product-popup-form__part.product-popup-form__part_right
+					button.button.button_green.product-popup-form__button Купить в 1 клик
+			a(href="#").product-popup-form__link Информация о доставке
+
+
+
+
+
+
+
+
+
+
+

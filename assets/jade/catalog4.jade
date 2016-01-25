@@ -1,0 +1,56 @@
+extends ./template/template.jade
+
+block title
+	title Каталог 1
+
+block style
+	link(rel="stylesheet" href="_catalog4.min.css")
+
+block content
+	include ./template/category-navigation.jade
+	.container
+		.product-cards-slider
+			h2.product-cards-slider__title
+				a(href="#").product-cards-slider__title-link Серия скрученных матрасов
+			//-p.product-cards-slider__text Серия Ассорти — это пружинные матрасы, имеющие разную жесткость сверху и снизу. В качестве материалов в данной серии применяются кокос и натуральный латекс.
+			.product-cards-slider__overview
+				.product-cards-slider__items
+					include ./template/product-card_scroll.jade
+					include ./template/product-card_scroll.jade
+					include ./template/product-card_scroll.jade
+					include ./template/product-card_scroll.jade
+					include ./template/product-card_scroll.jade
+					include ./template/product-card_scroll.jade
+					include ./template/product-card_scroll.jade
+					include ./template/product-card_scroll.jade
+			.product-cards-slider__scrollbar
+				.product-cards-slider__thumb
+					i.icon.icon_slide 123
+				.product-cards-slider__line
+	.hr.hr_gray
+	.container
+		.product-cards-slider
+			h2.product-cards-slider__title
+				a(href="#").product-cards-slider__title-link Серия скрученных матрасов
+			p.product-cards-slider__text Серия Ассорти — это пружинные матрасы, имеющие разную жесткость сверху и снизу. В качестве материалов в данной серии применяются кокос и натуральный латекс.
+			.product-cards-slider__overview
+				.product-cards-slider__items
+					include ./template/product-card_scroll.jade
+					include ./template/product-card_scroll.jade
+					include ./template/product-card_scroll.jade
+					include ./template/product-card_scroll.jade
+					include ./template/product-card_scroll.jade
+					include ./template/product-card_scroll.jade
+					include ./template/product-card_scroll.jade
+					include ./template/product-card_scroll.jade
+			.product-cards-slider__scrollbar
+				.product-cards-slider__thumb
+					i.icon.icon_slide 123
+				.product-cards-slider__line
+
+	include ./template/back-to-top.jade
+	include ./template/footer.jade
+	include ./template/social.jade
+	include ./template/cart.jade
+
+

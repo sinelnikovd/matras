@@ -1,0 +1,42 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<metadata>
+Created by FontForge 20150804 at Thu Jan 21 10:17:04 2016
+ By cloudconvert
+</metadata>
+<defs>
+<font id="flaticon" horiz-adv-x="512" >
+  <font-face 
+    font-family="flaticon"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="512"
+    panose-1="2 0 5 9 0 0 0 0 0 0"
+    ascent="448"
+    descent="-64"
+    bbox="0 -64 512 448"
+    underline-thickness="0"
+    underline-position="0"
+    unicode-range="U+E000-E002"
+  />
+<missing-glyph 
+ />
+    <glyph glyph-name=".notdef" 
+ />
+    <glyph glyph-name=".notdef" 
+ />
+    <glyph glyph-name=".null" horiz-adv-x="0" 
+ />
+    <glyph glyph-name="nonmarkingreturn" 
+ />
+    <glyph glyph-name="b" unicode="&#xe000;" 
+d="M284 166q-9 5 -29 5h-31v-63h28q25 0 33 5q12 9 12 27t-13 26zM272 219q10 8 10 23q0 16 -12 23q-6 4 -32 4h-14v-56h18q23 1 30 6zM422 448h-332q-37 0 -63.5 -26.5t-26.5 -63.5v-332q0 -37 26.5 -63.5t63.5 -26.5h332q37 0 63.5 26.5t26.5 63.5v332q0 37 -26.5 63.5
+t-63.5 26.5zM270 61h-105v253h115q26 0 44.5 -16t18.5 -43q0 -20 -10 -34.5t-26 -19.5v-1q52 -11 52 -62q0 -31 -22.5 -54t-66.5 -23z" />
+    <glyph glyph-name="logotype3" unicode="&#xe001;" 
+d="M416 448h-320q-40 0 -68 -28t-28 -68v-320q0 -40 28 -68t68 -28h320q40 0 68 28t28 68v320q0 40 -28 68t-68 28zM403 172h-48v-177h-80v177h-31v60h31v38q0 39 18.5 59.5t61.5 20.5h59v-60h-34q-16 0 -20.5 -5.5t-4.5 -18.5v-34h55z" />
+    <glyph glyph-name="twitter2" unicode="&#xe002;" 
+d="M416 448h-320q-40 0 -68 -28t-28 -68v-320q0 -40 28 -68t68 -28h320q40 0 68 28t28 68v320q0 40 -28 68t-68 28zM383 249l1 -8q0 -68 -49 -123.5t-131 -55.5q-52 0 -96 28q7 -1 15 -1q43 0 78 27q-21 1 -37 13t-22 31q6 -1 12 -1q9 0 17 2q-22 5 -36.5 22t-14.5 40v1
+q13 -8 29 -8q-29 19 -29 52q0 17 9 32q50 -62 130 -66q-2 7 -2 15q0 26 18.5 44.5t44.5 18.5q28 0 46 -20q22 4 40 15q-7 -23 -27 -35q18 2 36 10q-13 -19 -32 -33z" />
+  </font>
+</defs></svg>

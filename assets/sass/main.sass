@@ -1,0 +1,711 @@
+@import "bourbon"
+@import "_normalize.sass"
+@import "_vars.sass"
+@import "_fonts.sass"
+
+@import "libs/sprite.sass"
+@import "libs/owl.carousel.sass"
+@import "libs/magnific-popup.sass"
+
+
+*::-webkit-input-placeholder
+	color: #424242
+	opacity: 1
+
+
+*:-moz-placeholder
+	color: #424242
+	opacity: 1
+
+*::-moz-placeholder
+	color: #424242
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #424242
+	opacity: 1
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+	-webkit-appearance: none
+input[type='number']
+	-moz-appearance: textfield
+
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #424242
+
+body input:required:valid,
+body textarea:required:valid
+	color: #424242
+
+body
+	font-size: 14px
+	position: relative
+	line-height: 1.3
+	font-family: "ProximaNovaRegular", $helvetica
+	font-weight: normal
+	overflow-x: hidden
+	color: #333333
+	position: relative
+.hidden
+	display: none
+.container
+	max-width: 600px
+	margin: 0 auto
+
+.mfp-container
+	padding: 0
+
+/* icon */
+.icon
+	display: inline-block
+	font-family: 'Icon'
+	font-style: normal
+	font-weight: normal
+.icon_cart:before
+	content: 'k'
+.icon_t:before
+	content: 't'
+.icon_delete:before
+	content: 'g'
+.icon_phone:before
+	content: 'd'
+/* end icon */
+
+/*  */
+.social-icon
+	position: relative
+	display: inline-block
+	font-family: 'SocialIcon'
+	font-style: normal
+	font-weight: normal
+	line-height: 1
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	font-size: 20px
+.social-icon_tweeter:before
+	content: '\e002'
+	color: #28aae1
+.social-icon_vkontakte:before
+	content: '\e000'
+	color: #2d5c88
+.social-icon_facebook:before
+	content: '\e001'
+	color: #3b5da4
+/* end  */
+
+
+/* .produt-cards */
+.product-cards
+	text-align: center
+	+clearfix
+/* end .produt-cards */
+
+/* .product-card */
+.product-card
+	position: relative
+	margin-bottom: 20px
+.product-card_double
+	float: left
+	width: 50%
+.product-card_scroll
+	width: 175px
+	display: inline-block
+.product-card__link
+	display: block
+	text-decoration: none
+	outline: none
+.product-card__sale
+	width: 30px
+	height: 30px
+	border-radius: 50%
+	border: 1px solid #ee5a4e
+	display: inline-block
+	font-size: 10px
+	color: #ee5a4e
+	position: absolute
+	padding: 8px 0
+	text-align: center
+	box-sizing: border-box
+.product-card__title
+	font-size: 15px
+	margin: 6px 0 0
+	font-weight: normal
+	color: #037bd2
+	text-decoration: underline
+	&:hover
+		text-decoration: none
+.product-card__price
+	margin: 6px 0 0
+	font-family: "ProximaNovaBold", $helvetica
+	font-weight: normal
+	font-size: 14px
+	color: #333333
+/* end .product-card */
+
+/* .section-hits */
+.section-hits
+	text-align: center
+	padding: 34px 0 18px
+.section-hits__title 
+	font-size: 22px
+	font-weight: normal
+	margin: 0
+.section-hits__product-cards
+	margin-top: 25px
+.section-hits__link
+	color: #037bd2
+	font-size: 14px
+	margin: 6px 0 0
+	display: inline-block
+	&:hover
+		color: #024f87
+/* end .section-hits */
+
+/* .popular-size */
+.popular-size
+	list-style-type: none
+	padding: 0
+	font-size: 0
+	+clearfix
+.popular-size__item
+	display: inline-block
+	border-top: 1px solid #f8e8ce
+	border-bottom: 1px solid #f8e8ce
+	border-left: 1px solid #f8e8ce
+.popular-size__item_last
+	border-right: 1px solid #f8e8ce
+.popular-size__link
+	display: inline-block
+	padding: 3px 10px
+	color: #038ef3
+	font-size: 14px
+	text-decoration: none
+	&:hover
+		color: #024f87
+/* end .popular-size */
+
+/* .section-popular-size */
+.section-popular-size
+	padding: 18px 0 14px
+	background-color: #fdf6ec
+	text-align: center
+.section-popular-size__title
+	font-size: 18px
+	font-weight: normal
+	margin: 0
+.section-popular-size__popular-size
+	margin-top: 18px
+.section-popular-size__link
+	color: #037bd2
+	font-size: 14px
+	margin: 16px 0 0
+	display: inline-block
+	&:hover
+		color: #024f87
+/* end .section-popular-size */
+
+/* .about-items */
+.about-items
+	margin-top: 5px
+	+clearfix
+/* end .about-items */
+
+/* .about-item */
+.about-item
+	float: left
+	width: 50%
+	height: 105px
+	position: relative
+	padding: 30px 20px 0
+	box-sizing: border-box
+.about-item__number
+	position: absolute
+	top: 0
+	left: 50%
+	+transform(translateX(-50%))
+	font-family: "ProximaNovaThin", $helvetica
+	font-weight: normal
+	font-size: 106px
+	line-height: 1
+	color: #f4e9d4
+	z-index: -1
+.about-item__text
+	font-family: "ProximaNovaBold", $helvetica
+	font-weight: normal
+	font-size: 14px
+	margin: 0
+/* end .about-item */
+
+/* .section-main-about */
+.section-main-about
+	padding: 30px 0 25px
+	text-align: center
+.section-main-about__title
+	font-size: 22px
+	font-weight: normal
+	margin: 0
+.section-main-about__link
+	color: #037bd2
+	font-size: 14px
+	margin: 0
+	display: inline-block
+	&:hover
+		color: #024f87
+/* end .section-main-about */
+
+/* .footer-menu */
+.footer-menu
+	list-style-type: none
+	margin: 0
+	padding: 0 15px
+	font-size: 0
+	box-sizing: border-box
+	text-align: center
+	border-bottom: 
+.footer-menu__item
+	display: inline-block
+	font-size: 13px
+	line-height: 1.8
+.footer-menu__link
+	font-family: "ProximaNovaSemibold", $helvetica
+	font-weight: normal
+	color: #fff
+	text-decoration: none
+	&:hover
+		text-decoration: underline
+.footer-menu__slash
+	margin: 0 3px
+	color: #515151
+/* end .footer-menu */
+
+/* .hr */
+.hr
+	width: 100%
+	height: 1px
+	background-color: #3c3c3c
+.hr_gray
+	background-color: #e7e7e7
+/* end .hr */
+
+/* footer */
+footer
+	background-color: #303030
+	color: #fff
+	text-align: center
+.footer__navigation
+	padding: 17px 0 11px
+.footer__contact
+	padding: 16px 0 12px
+.footer__timework
+	font-family: "ProximaNovaSemibold", $helvetica
+	font-weight: normal
+	font-size: 13px
+	margin: 0 0 16px
+.footer__phonelink
+	display: block
+	text-decoration: none
+	color: #fff
+	font-family: "ProximaNovaLight", $helvetica
+	font-weight: normal
+	font-size: 24px
+.footer__search
+	height: 60px
+.footer__fulllink
+	display: inline-block
+	padding: 8px 0
+	text-align: center
+	text-decoration: none
+	font-family: "ProximaNovaSemibold", $helvetica
+	font-weight: normal
+	font-size: 14px
+	color: #fff
+	&:hover
+		text-decoration: underline
+/* end footer */
+
+/* .social */
+.social
+	margin: 0
+	padding: 0
+	font-size: 0
+	list-style-type: none
+	text-align: center
+.social__item
+	display: inline-block
+	margin: 0 2px
+/* end .social */
+
+/* .section-social */
+.section-social
+	padding: 10px 0
+/* end .section-social */
+
+/* cart */
+.cart
+	position: fixed
+	z-index: 20
+	right: 15px
+	bottom: 15px
+	width: 50px
+	height: 50px
+	box-sizing: border-box
+	border-radius: 50%
+	background-color: #eb5c4e
+	text-align: center
+	color: #fff
+	cursor: pointer
+	box-shadow: 0px 2px 0px #b15545
+.cart__icon
+	font-size: 42px
+	line-height: 1
+	padding: 5px 5px 0
+.cart__count
+	position: absolute
+	top: -2px
+	right: -5px
+	background-color: #b15545
+	border-radius: 50%
+	width: 20px
+	height: 20px
+	box-sizing: border-box
+	text-align: center
+	font-family: "ProximaNovaSemibold", $helvetica
+	font-weight: normal
+	font-size: 12px
+	line-height: 1.7
+/* end cart */
+
+
+/* banner */
+.banner
+	position: fixed
+	bottom: 0
+	z-index: 20
+	background-color: #EE5A4E
+	width: 100%
+	min-height: 75px
+	display: none
+	&+.cart
+		bottom: 90px
+.banner__close
+	position: absolute
+.banner__link
+	width: 100%
+	display: table
+	color: #fff
+	&:hover
+		text-decoration: none
+.banner__picture
+	display: table-cell
+	vertical-align: middle
+.banner__text
+	width: 80%
+	display: table-cell
+	vertical-align: middle
+	box-sizing: border-box
+	padding: 0 20px
+	font-size: 14px
+/* end banner */
+
+/* cart-item */
+.cart-item
+	border-top: 1px solid #e7e7e7
+	display: table
+	width: 100%
+	padding: 12px 0
+	box-sizing: border-box
+	max-height: 140px
+.cart-item__preview
+	display: table-cell
+	vertical-align: middle
+.cart-item__picture
+	width: 100%
+.cart-item__description
+	display: table-cell
+	vertical-align: top
+	min-width: 190px
+	padding-left: 15px
+	box-sizing: border-box
+.cart-item__link
+	display: block
+	font-size: 15px
+	color: #037bd2
+	text-decoration: underline
+	&:hover
+		text-decoration: none
+.cart-item__price
+	font-family: "ProximaNovaBold", $helvetica
+	font-weight: normal
+	font-size: 15px
+	margin-top: 10px
+	display: inline-block
+.cart-item__point
+	font-size: 18px
+	margin: 0 10px
+.cart-item__size
+	display: inline-block
+
+.cart-item__controls
+	margin-top: 12px
+	font-size: 0
+.cart-item__count
+	width: 24px
+	border: none
+	text-align: center
+	font-family: "ProximaNovaSemibold", $helvetica
+	font-weight: normal
+	font-size: 14px
+	vertical-align: middle
+.cart-item__minus
+	display: inline-block
+	border: 1px solid #e8e8e8
+	border-radius: 1px
+	width: 30px
+	height: 30px
+	text-align: center
+	box-sizing: border-box
+	font-family: "ProximaNovaSemibold", $helvetica
+	font-weight: normal
+	font-size: 15px
+	padding: 4px 0 0
+	vertical-align: middle
+.cart-item__plus
+	display: inline-block
+	border: 1px solid #e8e8e8
+	border-radius: 1px
+	width: 30px
+	height: 30px
+	text-align: center
+	box-sizing: border-box
+	font-family: "ProximaNovaSemibold", $helvetica
+	font-weight: normal
+	font-size: 14px
+	padding: 5px 0 0
+	vertical-align: middle
+.cart-item__delete
+	display: inline-block
+	width: 30px
+	height: 30px
+	text-align: center
+	padding: 2px 0 0
+	font-size: 22px
+	border: 1px solid #e8e8e8
+	color: #ce5b4f
+	line-height: 1
+	box-sizing: border-box
+	vertical-align: middle
+	margin-left: 25px
+/* end cart-item */
+
+/* .cart-total */
+.cart-total
+	+clearfix
+.cart-total__title
+	font-family: "ProximaNovaSemibold", $helvetica
+	font-weight: normal
+	font-size: 22px
+	vertical-align: top
+.cart-total__price
+	float: right
+	list-style-type: none
+	margin: 0
+	padding: 2px 0 0
+	display: inline-block
+	vertical-align: bottom
+.cart-total__oldprice
+	display: inline-block
+	color: #929292
+	font-family: "ProximaNovaLight", $helvetica
+	font-weight: normal
+	font-size: 15px
+	text-decoration: line-through
+	margin-right: 25px
+.cart-total__newprice
+	display: inline-block
+	color: #ce5b4f
+	font-family: "ProximaNovaBold", $helvetica
+	font-weight: normal
+	font-size: 18px
+	margin-right: 15px
+/* end .cart-total */
+
+/* .button */
+.button
+	border: none
+	outline: none
+	border-radius: 4px
+	font-family: "ProximaNovaSemibold", $helvetica
+	font-weight: normal
+	font-size: 15px
+	cursor: pointer
+.button_green
+	+linear-gradient(to top, #6b9d2c, #87c33f)
+	color: #fff
+	&:hover
+		+linear-gradient(to bottom, #6b9d2c, #87c33f)
+.button_red
+	background-color: #ce5b4f
+	border: 2px solid #ce5b4f
+	&:hover
+		background-color: transparent
+/* end .button */
+
+/* .cart-form */
+.cart-form
+	position: relative
+.cart-form__icon
+	position: absolute
+	top: 4px
+	left: 7px
+	color: #eb5c4e
+	font-size: 22px
+.cart-form__input
+	width: 100%
+	display: inline-block
+	box-sizing: border-box
+	border-radius: 4px
+	border: 0
+	outline: 0
+	height: 35px
+	padding: 6px 10px 6px 35px
+	font-size: 12px
+.cart-form__button
+	margin-top: 10px
+	width: 100%
+	height: 50px
+/* end .cart-form */
+
+/* cart-popup */
+.cart-popup
+	max-width: 600px
+	margin: 0 auto
+	background-color: #fff
+	position: relative
+	padding: 16px 0 0
+.cart-popup__title
+	font-family: "ProximaNovaBold", $helvetica
+	font-weight: normal
+	font-size: 18px
+	margin: 0
+	padding: 0 12px
+.cart-popup__description
+	margin: 7px 0 14px
+	font-size: 14px
+	padding: 0 12px
+.cart-popup__calllink
+	text-decoration: none
+	color: #037bd2
+	&:hover
+		text-decoration: underline
+.cart-popup__footer
+	background-color: #F9EAD5
+	padding: 12px 8px
+	box-sizing: border-box
+.cart-popup__form
+	margin: 10px 20px 0
+.cart-popup__text
+	margin: 10px 0 10px
+	text-align: center
+.cart-popup__link
+	color: #037bd2
+	font-size: 12px
+/* end cart-popup */
+
+/* .decor-popup */
+.decor-popup
+	max-width: 600px
+	margin: 0 auto
+	position: relative
+	padding: 16px 0 16px
+	background-color: #fffbf2
+.decor-popup__title
+	font-family: "ProximaNovaBold", $helvetica
+	font-weight: normal
+	font-size: 18px
+	margin: 0
+	padding: 0 12px
+.decor-popup__form
+	margin: 25px 20px 0
+.decor-popup__label
+	display: block
+	color: #715412
+	font-size: 13px
+.decor-popup__label_margin_bottom
+	margin-bottom: 20px
+.decor-popup__input
+	width: 100%
+	height: 40px
+	border: 1px solid #f4e9d4
+	padding: 6px 10px
+	box-sizing: border-box
+	margin-top: 6px
+.decor-popup__textarea
+	width: 100%
+	border: 1px solid #f4e9d4
+	padding: 6px 10px
+	box-sizing: border-box
+	margin-top: 6px
+	resize: none
+.decor-popup__clarification
+	color: #c9b78f
+	font-size: 13px
+	margin: 5px 0 15px
+.decor-popup__optional
+	font-size: 18px
+	color: #484848
+	margin: 52px 0 20px
+.decor-popup__button
+	width: 100%
+	height: 40px
+	margin-top: 10px
+/* end .decor-popup */
+
+
+/* .product-popup-form */
+.product-popup-form
+	background-color: #fffbf2
+.product-popup-form__block
+	+clearfix
+.product-popup-form__part
+	float: left
+	width: 50%
+	padding: 0 15px
+	box-sizing: border-box
+
+/* end .product-popup-form */
+
+
+/* .product-popup */
+.product-popup
+	max-width: 600px
+	margin: 0 auto
+	background-color: #fff
+	position: relative
+	padding: 20px 0 16px
+.product-popup__title
+	font-weight: normal
+	font-size: 21px
+	margin: 0
+	padding: 0 12px
+/* end .product-popup */
+
+
+
+
+
+
+
+
+/* .content */
+.content
+	margin: 10px 0
+	padding: 0 20px
+	box-sizing: border-box
+/* end .content*/
+
+
+//ALWAYS END
+//@import "_media.sass"

@@ -1,0 +1,30 @@
+extends ./template/template.jade
+
+block title
+	title Каталог 1
+
+block style
+	link(rel="stylesheet" href="_catalog1.min.css")
+
+block content
+	include ./template/category-navigation.jade
+	.container
+		.product-cards
+			include ./template/product-card.jade
+			include ./template/product-card.jade
+			include ./template/product-card.jade
+			include ./template/product-card.jade
+			include ./template/product-card.jade
+			include ./template/product-card.jade
+			include ./template/product-card.jade
+			include ./template/product-card.jade
+	.hr.hr_gray
+	.container
+		.content
+			p.content__text Для детей от 0 до 3 лет лучше приобретать безпружинные модели максимально высокой жесткости. Высокая жесткость в первые годы жизни необходима для правильного формирования осани. Позвоночник ребенка в этом возврасте еще не имеет изгиба, характерного для взрослого человека. у новорожденных он прямой, именно поэтому поверхность, на которой спит ребенок, должна быть непременно жесткой. Для этого возвраста лучше всего выбирать детские матрасы из кокоса.
+	include ./template/back-to-top.jade
+	include ./template/footer.jade
+	include ./template/social.jade
+	include ./template/cart.jade
+
+
