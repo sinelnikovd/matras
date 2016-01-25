@@ -5,7 +5,7 @@
     <title>Главная страница</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <link rel="stylesheet" href="_main.min.css">
+    <link rel="stylesheet" href="_index.min.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
@@ -15,6 +15,74 @@
     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
   </head>
   <body>
+    <div class="header">
+      <div class="container">
+        <div class="navigation-bar hader__navigation-bar">
+          <div class="logo header__logo"><a href="/" class="logo__link"><img src="img/logo.png" alt="" class="logo__image"></a></div>
+          <ul class="header-button header__button">
+            <li class="header-button__item"><a href="tel:888800000" class="header-button__link"><i class="icon icon_call header-button__icon"></i></a></li>
+            <li class="header-button__item"><a href="javascript:void();" class="header-button__link"><i class="icon icon_fillter header-button__icon"></i><span class="header-button__text">Фильтр</span></a></li>
+            <li class="header-button__item"><a href="javascript:void();" class="header-button__link header-button__link_menu"><i class="icon icon_menu header-button__icon"></i><span class="header-button__text">Каталог</span></a></li>
+          </ul>
+        </div>
+        <div class="navigation header__navigation">
+          <ul class="navigation__menu">
+            <li><a href="#" class="navigation__link navigation__link_active">МАТРАСЫ</a></li>
+            <li><a href="#" class="navigation__link">ДЕТСКИЕ МАТРАСЫ</a></li>
+            <li><a href="#" class="navigation__link">МАТРАСЫ НА ДИВАН</a></li>
+            <li><a href="#" class="navigation__link">НАМАТРАСНИКИ</a></li>
+            <li><a href="#" class="navigation__link">ПОДУШКИ</a></li>
+            <li><a href="#" class="navigation__link">ОДЕЯЛА</a></li>
+            <li><a href="#" class="navigation__link">ОСНОВАНИЯ</a></li>
+            <li><a href="#" class="navigation__link">КРОВАТИ</a></li>
+            <li><a href="#" class="navigation__link">ШКАФЫ КОМОДЫ ТУМБЫ</a></li>
+          </ul>
+          <div class="navigation__search">
+            <form action="/" class="search search_top">
+              <input type="text" class="search__input search__input_top">
+              <button type="submit" class="search__button search__button_top">Поиск</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-call-top">
+      <div class="container">
+        <p class="section-call-top__title">Подберем Вам матрас, прямо сейчас <br><strong>с учетом всех ваших пожеланий</strong></p>
+        <form class="call section-call-top__call"><i class="icon icon_phone call__icon"></i>
+          <input type="text" placeholder="Введите телефон" class="call__text data-inputmask">
+          <button type="submit" class="call__button">Жду звонка</button>
+        </form>
+        <p class="section-call-top__subtitle">Перезвоним за одну минуту</p>
+      </div>
+    </div>
+    <div class="section-main-catalog">
+      <div class="container">
+        <div class="catalog-miniature-row">
+          <div class="catalog-miniature-item catalog-miniature-item_first catalog-miniature-row__item"><a href="#" class="catalog-miniature-item__link"><img src="img/ico-matras.png" alt="" class="catalog-miniature-item__picture">
+              <p><span class="catalog-miniature-item__text">Матрасы</span></p></a></div>
+          <div class="catalog-miniature-item catalog-miniature-item_last catalog-miniature-row__item"><a href="#" class="catalog-miniature-item__link"><img src="img/ico-detskie-matras.png" alt="" class="catalog-miniature-item__picture">
+              <p><span class="catalog-miniature-item__text">Детские матрасы</span></p></a></div>
+        </div>
+        <div class="catalog-miniature-row">
+          <div class="catalog-miniature-item catalog-miniature-item_first catalog-miniature-row__item"><a href="#" class="catalog-miniature-item__link"><img src="img/ico-namatrasnik.png" alt="" class="catalog-miniature-item__picture">
+              <p><span class="catalog-miniature-item__text">Наматрасники</span></p></a></div>
+          <div class="catalog-miniature-item catalog-miniature-item_last catalog-miniature-row__item"><a href="#" class="catalog-miniature-item__link"><img src="img/ico-osnovaniya.png" alt="" class="catalog-miniature-item__picture">
+              <p><span class="catalog-miniature-item__text">Основания</span></p></a></div>
+        </div>
+        <div class="catalog-miniature-row catalog-miniature-row_last">
+          <div class="catalog-miniature-item catalog-miniature-item_first catalog-miniature-row__item"><a href="#" class="catalog-miniature-item__link"><img src="img/ico-podushki.png" alt="" class="catalog-miniature-item__picture">
+              <p><span class="catalog-miniature-item__text">Подушки</span></p></a></div>
+          <div class="catalog-miniature-item catalog-miniature-item_last catalog-miniature-row__item"><a href="#" class="catalog-miniature-item__link"><img src="img/ico-matras-divan.png" alt="" class="catalog-miniature-item__picture">
+              <p><span class="catalog-miniature-item__text">Матрасы на диван</span></p></a></div>
+        </div>
+      </div>
+      <div class="section-main-catalog-andto section-main-catalog__andto">
+        <div class="container">
+          <p class="section-main-catalog-andto__text">А ещё: <a href="#" class="section-main-catalog-andto__link">одеяла;</a> <a href="#" class="section-main-catalog-andto__link">шкафы, комоды, тумбы</a></p>
+        </div>
+      </div>
+    </div>
     <div class="section-hits">
       <div class="container">
         <h2 class="section-hits__title">Хиты продаж</h2>
@@ -96,7 +164,12 @@
       </div>
       <div class="hr"></div>
       <div class="container">
-        <div class="footer__search">search form</div>
+        <div class="footer__search">
+          <form action="/" class="search search_bottom">
+            <input type="text" class="search__input search__input_bottom">
+            <button type="submit" class="search__button search__button_bottom">Поиск</button>
+          </form>
+        </div>
       </div>
       <div class="hr"></div>
       <div class="container"><a href="http://www.matras.ru/" class="fulllink footer__fulllink"><i class="icon icon_full"></i><span class="fulllink__text">Полная версия сайта</span></a></div>

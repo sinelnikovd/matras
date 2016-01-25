@@ -49,8 +49,14 @@ body
 	overflow-x: hidden
 	color: #333333
 	position: relative
+
+strong
+	font-family: 'ProximaNovaBold', $helvetica
+	font-weight: normal
+
 .hidden
 	display: none
+
 .container
 	max-width: 600px
 	margin: 0 auto
@@ -58,21 +64,61 @@ body
 .mfp-container
 	padding: 0
 
+
 /* icon */
 .icon
+	position: relative
+	top: 1px
 	display: inline-block
-	font-family: 'Icon'
+	font-family: 'icon'
 	font-style: normal
 	font-weight: normal
-.icon_cart:before
-	content: 'k'
-.icon_t:before
-	content: 't'
-.icon_delete:before
-	content: 'g'
+	line-height: 1
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+.icon_call:before
+	content: 'a'
+.icon_fillter:before
+	content: 'b'
+.icon_c:before
+	content: 'c'
 .icon_phone:before
 	content: 'd'
+.icon_e:before
+	content: 'e'
+.icon_f:before
+	content: 'f'
+.icon_delete:before
+	content: 'g'
+.icon_h:before
+	content: 'h'
+.icon_i:before
+	content: 'i'
+.icon_j:before
+	content: 'j'
+.icon_cart:before
+	content: 'k'
+.icon_l:before
+	content: 'l'
+.icon_m:before
+	content: 'm'
+.icon_n:before
+	content: 'n'
+.icon_o:before
+	content: 'o'
+.icon_p:before
+	content: 'p'
+.icon_menu:before
+	content: 'q'
+.icon_r:before
+	content: 'r'
+.icon_s:before
+	content: 's'
+.icon_t:before
+	content: 't'
 /* end icon */
+
+
 
 /*  */
 .social-icon
@@ -96,6 +142,167 @@ body
 	color: #3b5da4
 /* end  */
 
+
+/* .logo */
+.logo__link
+	display: block
+	padding: 13px 10px 9px
+.logo__image
+	width: 83px
+/* end .logo */
+
+/* .header-button */
+.header-button
+	list-style: none
+	margin: 0
+	padding: 0
+.header-button__item
+	float: left
+.header-button__link
+	color: #fff
+	text-decoration: none
+	display: block
+	padding: 6px 8px 6px 10px
+	font-size: 22px
+	border-left: 1px solid #c05448
+	&:hover
+		background-color: #da4e41
+.header-button__icon
+	vertical-align: top
+.header-button__text
+	font-size: 13px
+	vertical-align: middle
+
+/* end .header-button */
+
+/* navigation */
+.navigation
+	background-color: #da4e41
+.navigation__menu
+	margin: 0
+	padding: 0
+	list-style: none
+	text-align: center
+.navigation__link
+	display: block
+	padding: 10px 15px
+	color: #fff
+	text-decoration: none
+	text-transform: uppercase
+	font-size: 12px
+	border-bottom: 1px solid #eb5c4e
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25)
+.navigation__link_active
+	background-color: #C73628
+	box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.075)
+/* end navigation */
+
+/* search */
+.search_top
+	padding: 15px 0
+	text-align: center
+.search__input
+	color: #fff
+	border-radius: 4px
+	border: 0
+	padding: 6px 10px
+	margin-right: 10px
+.search__input_top
+	background-color: #d46258
+.search__input_bottom
+	background-color: #3f3f3f
+.search__button
+	width: 90px
+	background-color: transparent
+	border: 2px solid #fff
+	color: #fff
+	border-radius: 4px
+	cursor: pointer
+	display: inline-block
+	padding: 2px 0
+	height: 28px
+	&:hover
+		background-color: #fff
+.search__button_top
+	&:hover
+		color: #c05448
+.search__button_bottom
+	&:hover
+		color: #000
+/* end search */
+
+/* header */
+.header
+	background-color: #eb5c4e
+	border-color: #e84130
+.hader__navigation-bar
+	+clearfix
+.header__logo
+	float: left
+.header__button
+	float: right
+	border-right: 1px solid #c05448
+.header__navigation
+	display: none
+/* end header */
+
+
+/* call */
+.call
+	position: relative
+	width: 290px
+	margin: 0 auto
+.call__icon
+	position: absolute
+	top: 5px
+	left: 7px
+	font-size: 22px
+	color: #eb5c4e
+.call__text
+	width: 185px
+	height: 35px
+	padding: 6px 10px 6px 30px
+	box-sizing: border-box
+	font-size: 12px
+	border-radius: 4px
+	border: 0
+	outline: 0
+	vertical-align: middle
+.call__button
+	width: 95px
+	outline: none
+	background-color: transparent
+	border: 2px solid #eb5c4e
+	border-radius: 4px
+	padding: 5px 0
+	vertical-align: middle
+	color: #fff
+	&:hover
+		background-color: #eb5c4e
+/* end call */
+
+/* .section-call-top */
+.section-call-top
+	background-image: url('img/topbg.jpg')
+	background-position: center bottom
+	background-repeat: no-repeat
+	background-color: #3e3e3e
+	text-align: center
+	padding: 14px 0
+.section-call-top__title
+	font-size: 15px
+	line-height: 1.25
+	color: #fff
+	margin: 0
+.section-call-top__call
+	margin-top: 18px
+.section-call-top__subtitle
+	font-size: 12px
+	opacity: .3
+	margin: 10px 0 0
+	color: #fff
+
+/* end .section-call-top */
 
 /* .produt-cards */
 .product-cards
@@ -145,116 +352,13 @@ body
 	color: #333333
 /* end .product-card */
 
-/* .section-hits */
-.section-hits
-	text-align: center
-	padding: 34px 0 18px
-.section-hits__title 
-	font-size: 22px
-	font-weight: normal
-	margin: 0
-.section-hits__product-cards
-	margin-top: 25px
-.section-hits__link
-	color: #037bd2
-	font-size: 14px
-	margin: 6px 0 0
-	display: inline-block
-	&:hover
-		color: #024f87
-/* end .section-hits */
 
-/* .popular-size */
-.popular-size
-	list-style-type: none
-	padding: 0
-	font-size: 0
-	+clearfix
-.popular-size__item
-	display: inline-block
-	border-top: 1px solid #f8e8ce
-	border-bottom: 1px solid #f8e8ce
-	border-left: 1px solid #f8e8ce
-.popular-size__item_last
-	border-right: 1px solid #f8e8ce
-.popular-size__link
-	display: inline-block
-	padding: 3px 10px
-	color: #038ef3
-	font-size: 14px
-	text-decoration: none
-	&:hover
-		color: #024f87
-/* end .popular-size */
 
-/* .section-popular-size */
-.section-popular-size
-	padding: 18px 0 14px
-	background-color: #fdf6ec
-	text-align: center
-.section-popular-size__title
-	font-size: 18px
-	font-weight: normal
-	margin: 0
-.section-popular-size__popular-size
-	margin-top: 18px
-.section-popular-size__link
-	color: #037bd2
-	font-size: 14px
-	margin: 16px 0 0
-	display: inline-block
-	&:hover
-		color: #024f87
-/* end .section-popular-size */
 
-/* .about-items */
-.about-items
-	margin-top: 5px
-	+clearfix
-/* end .about-items */
 
-/* .about-item */
-.about-item
-	float: left
-	width: 50%
-	height: 105px
-	position: relative
-	padding: 30px 20px 0
-	box-sizing: border-box
-.about-item__number
-	position: absolute
-	top: 0
-	left: 50%
-	+transform(translateX(-50%))
-	font-family: "ProximaNovaThin", $helvetica
-	font-weight: normal
-	font-size: 106px
-	line-height: 1
-	color: #f4e9d4
-	z-index: -1
-.about-item__text
-	font-family: "ProximaNovaBold", $helvetica
-	font-weight: normal
-	font-size: 14px
-	margin: 0
-/* end .about-item */
 
-/* .section-main-about */
-.section-main-about
-	padding: 30px 0 25px
-	text-align: center
-.section-main-about__title
-	font-size: 22px
-	font-weight: normal
-	margin: 0
-.section-main-about__link
-	color: #037bd2
-	font-size: 14px
-	margin: 0
-	display: inline-block
-	&:hover
-		color: #024f87
-/* end .section-main-about */
+
+
 
 /* .footer-menu */
 .footer-menu
@@ -312,7 +416,7 @@ footer
 	font-weight: normal
 	font-size: 24px
 .footer__search
-	height: 60px
+	padding: 18px 0
 .footer__fulllink
 	display: inline-block
 	padding: 8px 0
@@ -602,10 +706,10 @@ footer
 		text-decoration: underline
 .cart-popup__footer
 	background-color: #F9EAD5
-	padding: 12px 8px
+	padding: 12px 25px
 	box-sizing: border-box
 .cart-popup__form
-	margin: 10px 20px 0
+	margin: 10px 0 0
 .cart-popup__text
 	margin: 10px 0 10px
 	text-align: center

@@ -24,7 +24,10 @@ footer
 			a(href="tel:+78003338062").footer__phonelink +7 (800) 333-80-62
 	.hr
 	.container
-		.footer__search search form
+		.footer__search
+			form(action="/").search.search_bottom
+						input(type="text").search__input.search__input_bottom
+						button(type="submit").search__button.search__button_bottom Поиск
 	.hr
 	.container
 		a(href="http://www.matras.ru/").fulllink.footer__fulllink

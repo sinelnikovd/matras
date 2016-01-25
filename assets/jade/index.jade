@@ -3,7 +3,53 @@ extends ./template/template.jade
 block title
 	title Главная страница
 
+block style
+	link(rel="stylesheet" href="_index.min.css")
+
 block content
+	include ./template/header.jade
+	include ./template/section-call-top.jade
+	.section-main-catalog
+		.container
+			.catalog-miniature-row
+				.catalog-miniature-item.catalog-miniature-item_first.catalog-miniature-row__item
+					a(href="#").catalog-miniature-item__link
+						img(src="img/ico-matras.png", alt="").catalog-miniature-item__picture
+						p
+							span.catalog-miniature-item__text Матрасы
+				.catalog-miniature-item.catalog-miniature-item_last.catalog-miniature-row__item
+					a(href="#").catalog-miniature-item__link
+						img(src="img/ico-detskie-matras.png", alt="").catalog-miniature-item__picture
+						p
+							span.catalog-miniature-item__text Детские матрасы
+			.catalog-miniature-row
+				.catalog-miniature-item.catalog-miniature-item_first.catalog-miniature-row__item
+					a(href="#").catalog-miniature-item__link
+						img(src="img/ico-namatrasnik.png", alt="").catalog-miniature-item__picture
+						p
+							span.catalog-miniature-item__text Наматрасники
+				.catalog-miniature-item.catalog-miniature-item_last.catalog-miniature-row__item
+					a(href="#").catalog-miniature-item__link
+						img(src="img/ico-osnovaniya.png", alt="").catalog-miniature-item__picture
+						p
+							span.catalog-miniature-item__text Основания
+			.catalog-miniature-row.catalog-miniature-row_last
+				.catalog-miniature-item.catalog-miniature-item_first.catalog-miniature-row__item
+					a(href="#").catalog-miniature-item__link
+						img(src="img/ico-podushki.png", alt="").catalog-miniature-item__picture
+						p
+							span.catalog-miniature-item__text Подушки
+				.catalog-miniature-item.catalog-miniature-item_last.catalog-miniature-row__item
+					a(href="#").catalog-miniature-item__link
+						img(src="img/ico-matras-divan.png", alt="").catalog-miniature-item__picture
+						p
+							span.catalog-miniature-item__text Матрасы на диван
+		.section-main-catalog-andto.section-main-catalog__andto
+			.container
+				p.section-main-catalog-andto__text А ещё: 
+					a(href="#").section-main-catalog-andto__link одеяла;
+					| 
+					a(href="#").section-main-catalog-andto__link шкафы, комоды, тумбы
 	.section-hits
 		.container
 			h2.section-hits__title Хиты продаж
