@@ -6,6 +6,8 @@
 @import "libs/sprite.sass"
 @import "libs/owl.carousel.sass"
 @import "libs/magnific-popup.sass"
+@import "libs/sumoselect.sass"
+
 
 
 *::-webkit-input-placeholder
@@ -77,19 +79,19 @@ strong
 	-webkit-font-smoothing: antialiased
 	-moz-osx-font-smoothing: grayscale
 .icon_call:before
-	content: 'a'
+	content: 'm'
 .icon_fillter:before
-	content: 'b'
+	content: 'p'
 .icon_c:before
 	content: 'c'
 .icon_phone:before
-	content: 'd'
+	content: 'o'
 .icon_e:before
 	content: 'e'
 .icon_f:before
 	content: 'f'
 .icon_delete:before
-	content: 'g'
+	content: 't'
 .icon_h:before
 	content: 'h'
 .icon_i:before
@@ -97,7 +99,7 @@ strong
 .icon_j:before
 	content: 'j'
 .icon_cart:before
-	content: 'k'
+	content: 'r'
 .icon_l:before
 	content: 'l'
 .icon_m:before
@@ -116,11 +118,18 @@ strong
 	content: 's'
 .icon_t:before
 	content: 't'
+.icon_to-top:before
+	content: 'u'
+.icon_full:before
+	content: 'w'
+.icon_close:before
+	content: 'v'
+.icon_slide:before
+	content: 'x'
 /* end icon */
 
 
-
-/*  */
+/* .social-icon */
 .social-icon
 	position: relative
 	display: inline-block
@@ -162,14 +171,15 @@ strong
 	color: #fff
 	text-decoration: none
 	display: block
-	padding: 6px 8px 6px 10px
-	font-size: 22px
+	padding: 9px 8px 11px 10px
+	font-size: 16px
 	border-left: 1px solid #c05448
 	&:hover
 		background-color: #da4e41
 .header-button__icon
 	vertical-align: top
 .header-button__text
+	margin-left: 5px
 	font-size: 13px
 	vertical-align: middle
 
@@ -254,9 +264,9 @@ strong
 	margin: 0 auto
 .call__icon
 	position: absolute
-	top: 5px
-	left: 7px
-	font-size: 22px
+	top: 8px
+	left: 10px
+	font-size: 18px
 	color: #eb5c4e
 .call__text
 	width: 185px
@@ -354,7 +364,22 @@ strong
 
 
 
-
+/* .section-call-bottom */
+.section-call-bottom
+	text-align: center
+	background-color: #f4e9d4
+	padding: 16px 0 17px
+.section-call-bottom__title
+	font-size: 15px
+	line-height: 1.25
+	margin: 0
+.section-call-bottom__call
+	margin-top: 16px
+.section-call-bottom__button
+	color: #ee5a4e
+	&:hover
+		color: #fff
+/* end .section-call-bottom */
 
 
 
@@ -393,6 +418,12 @@ strong
 .hr_gray
 	background-color: #e7e7e7
 /* end .hr */
+
+/* .fulllink */
+.fulllink__text
+	margin-left: 5px
+	vertical-align: top
+/* end .fulllink */
 
 /* footer */
 footer
@@ -463,9 +494,9 @@ footer
 	cursor: pointer
 	box-shadow: 0px 2px 0px #b15545
 .cart__icon
-	font-size: 42px
+	font-size: 32px
 	line-height: 1
-	padding: 5px 5px 0
+	padding: 8px 5px 0
 .cart__count
 	position: absolute
 	top: -2px
@@ -594,8 +625,8 @@ footer
 	width: 30px
 	height: 30px
 	text-align: center
-	padding: 2px 0 0
-	font-size: 22px
+	padding: 4px 0 0
+	font-size: 16px
 	border: 1px solid #e8e8e8
 	color: #ce5b4f
 	line-height: 1
@@ -798,6 +829,52 @@ footer
 
 
 
+/** .filter */
+.filter
+	background-color: #fbf6ec
+	text-align: center
+	padding-top: 20px
+.filter__titile
+	font-family: "ProximaNovaBold", $helvetica
+	font-weight: normal
+	font-size: 18px
+	margin: 0
+.filter__subtitle
+	color: #473a21
+	font-size: 13px
+	margin-top: 5px
+	display: inline-block
+
+.filter__form
+	+clearfix
+
+.filter__input-group
+	float: left
+	text-align: left
+	width: 50%
+	padding: 0 20px
+	box-sizing: border-box
+	.SumoSelect
+		width: 100%
+.filter__control
+	width: 100%
+
+
+.filter__footer
+	background-color: #f4e9d4
+	padding: 22px 0
+.filter__button
+	padding: 12px 35px
+.filter__text
+	margin: 0
+	
+/* end .filter */
+
+
+
+
+
+
 
 
 
@@ -809,6 +886,14 @@ footer
 	padding: 0 20px
 	box-sizing: border-box
 /* end .content*/
+
+
+.mfp-close-btn-in .mfp-close
+	position: absolute
+	color: #eb5c4e
+
+
+
 
 
 //ALWAYS END

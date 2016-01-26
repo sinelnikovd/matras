@@ -80,7 +80,7 @@ gulp.task('sprite', function() {
 gulp.task('watch', function() {
 	gulp.watch('assets/sass/*.sass', ['styles']);
 	gulp.watch('assets/jade/*.jade', ['jade']);
-	gulp.watch('assets/sprite/*.*', ['sprite']);
+	//gulp.watch('assets/sprite/*.*', ['sprite']);
 	gulp.watch('assets/app/*.css', notifyLiveReload);
 	gulp.watch('assets/app/*.html', notifyLiveReload);
 });

@@ -9,6 +9,7 @@ block style
 block content
 	include ./template/header.jade
 	include ./template/section-call-top.jade
+
 	.section-main-catalog
 		.container
 			.catalog-miniature-row
@@ -50,6 +51,58 @@ block content
 					a(href="#").section-main-catalog-andto__link одеяла;
 					| 
 					a(href="#").section-main-catalog-andto__link шкафы, комоды, тумбы
+
+	.filter
+			.container
+				h2.filter__titile Фильтр по параметрам
+				span.filter__subtitle так же доступен в шапке сайта
+			form(action="/").filter__form
+				.container
+					.filter__input-group
+						label.filter__label Тип
+							select(name="type").filter__control.filter__control_select.sumoselect
+								option(value="1") Любой
+								option(value="2") Не любой
+								option(value="3") Конкретный
+								option(value="4") Всякий
+					.filter__input-group
+						label.filter__label Бренд
+							select(name="brend").filter__control.filter__control_select.sumoselect
+								option(value="1") Все
+								option(value="2") Не любой
+								option(value="3") Конкретный
+								option(value="4") Всякий
+					.filter__input-group
+						label.filter__label Цена в рублях
+						input(type="text" name="pricefrom").filter__control.filter__control_input.filter__control_first
+						input(type="text" name="priceto").filter__control.filter__control_input.filter__control_last
+					.filter__input-group
+						label.filter__label Размер в см
+						input(type="number" name="width").filter__control.filter__control_input.filter__control_first
+						input(type="number" name="height").filter__control.filter__control_input.filter__control_last
+					.filter__input-group
+						label.filter__label Жесткость 1-ой стороны
+							select(name="type").filter__control.filter__control_select.sumoselect
+								option(value="1") Любой
+								option(value="2") Не любой
+								option(value="3") Конкретный
+								option(value="4") Всякий
+					.filter__input-group
+						label.filter__label Жесткость 2-ой стороны
+							select(name="brend").filter__control.filter__control_select.sumoselect
+								option(value="1") Все
+								option(value="2") Не любой
+								option(value="3") Конкретный
+								option(value="4") Всякий
+			.filter__footer
+				.container
+					button(type="submit").button.button_green.filter__button Подобрать
+					p.filter__text
+						a(href="#").filter__link Наш менеджер может помочь вам
+						|  с любым дополнительным параметром
+
+
+
 	.section-hits
 		.container
 			h2.section-hits__title Хиты продаж
@@ -61,6 +114,7 @@ block content
 				include ./template/product-card.jade
 				include ./template/product-card.jade
 			a(href="#").section-hits__link Смотреть все
+
 	.section-popular-size
 		.container
 			h2.section-popular-size__title Популярные размеры матрасов
@@ -97,8 +151,13 @@ block content
 					span.about-item__number 6
 					p.about-item__text Фирменная гарантия на всю продукцию
 			a(href="#").section-main-about__link Узнать больше
+
+	include ./template/section-call-bottom.jade
+
 	include ./template/footer.jade
+
 	include ./template/social.jade
+
 	.banner
 		.container
 			span.banner__close
@@ -190,6 +249,8 @@ block popup
 				.product-popup-form__part.product-popup-form__part_right
 					button.button.button_green.product-popup-form__button Купить в 1 клик
 			a(href="#").product-popup-form__link Информация о доставке
+
+
 
 
 
