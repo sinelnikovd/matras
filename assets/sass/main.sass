@@ -6,7 +6,7 @@
 @import "libs/sprite.sass"
 @import "libs/owl.carousel.sass"
 @import "libs/magnific-popup.sass"
-@import "libs/sumoselect.sass"
+@import "libs/nice-select.scss"
 
 
 
@@ -56,6 +56,9 @@ strong
 	font-family: 'ProximaNovaBold', $helvetica
 	font-weight: normal
 
+.text_gray
+	color: #777777
+
 .hidden
 	display: none
 
@@ -78,46 +81,48 @@ strong
 	line-height: 1
 	-webkit-font-smoothing: antialiased
 	-moz-osx-font-smoothing: grayscale
+.icon_like:before
+	content: 'a'
+.icon_doc:before
+	content: 'b'
 .icon_call:before
 	content: 'm'
 .icon_fillter:before
 	content: 'p'
-.icon_c:before
+.icon_car:before
 	content: 'c'
+.icon_orden:before
+	content: 'd'
 .icon_phone:before
 	content: 'o'
-.icon_e:before
+.icon_cup:before
 	content: 'e'
-.icon_f:before
+.icon_star:before
 	content: 'f'
+.icon_gift:before
+	content: 'g'
 .icon_delete:before
 	content: 't'
-.icon_h:before
+.icon_calendar:before
 	content: 'h'
-.icon_i:before
+.icon_box:before
 	content: 'i'
-.icon_j:before
+.icon_line:before
 	content: 'j'
+.icon_mail:before
+	content: 'k'
 .icon_cart:before
 	content: 'r'
-.icon_l:before
+.icon_phoneround:before
 	content: 'l'
-.icon_m:before
-	content: 'm'
 .icon_n:before
 	content: 'n'
-.icon_o:before
-	content: 'o'
-.icon_p:before
-	content: 'p'
 .icon_menu:before
 	content: 'q'
 .icon_r:before
 	content: 'r'
 .icon_s:before
 	content: 's'
-.icon_t:before
-	content: 't'
 .icon_to-top:before
 	content: 'u'
 .icon_full:before
@@ -150,6 +155,48 @@ strong
 	content: '\e001'
 	color: #3b5da4
 /* end  */
+
+/* .currency */
+.currency
+	position: relative
+	display: inline-block
+	font-family: 'Rouble'
+	font-style: normal
+	font-weight: normal
+	line-height: 1
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	&:before
+		content: 'a'
+/* end .currency */
+
+/* .button */
+.button
+	border: none
+	outline: none
+	border-radius: 4px
+	font-family: "ProximaNovaSemibold", $helvetica
+	font-weight: normal
+	font-size: 15px
+	cursor: pointer
+.button_green
+	+linear-gradient(to top, #6b9d2c, #87c33f)
+	color: #fff
+	&:hover
+		+linear-gradient(to bottom, #6b9d2c, #87c33f)
+.button_red
+	background-color: #ce5b4f
+	border: 2px solid #ce5b4f
+	&:hover
+		background-color: transparent
+.button_border_red
+	border: 1px solid #ce5b4f
+	color: #ce5b4f
+	background-color: #fff
+	&:hover
+		background-color: #ce5b4f
+		color: #fff
+/* end .button */
 
 
 /* .logo */
@@ -217,6 +264,7 @@ strong
 	border: 0
 	padding: 6px 10px
 	margin-right: 10px
+	outline: 0
 .search__input_top
 	background-color: #d46258
 .search__input_bottom
@@ -314,6 +362,11 @@ strong
 
 /* end .section-call-top */
 
+/* .product-cards-inline */
+.product-cards-inline
+	padding: 10px 10px 0
+/* end .product-cards-inline */
+
 /* .produt-cards */
 .product-cards
 	text-align: center
@@ -330,10 +383,15 @@ strong
 .product-card_scroll
 	width: 175px
 	display: inline-block
+.product-card_inline
+	margin-bottom: 30px
+	+clearfix
 .product-card__link
 	display: block
 	text-decoration: none
 	outline: none
+	text-align: center
+	color: #000
 .product-card__sale
 	width: 30px
 	height: 30px
@@ -343,6 +401,8 @@ strong
 	font-size: 10px
 	color: #ee5a4e
 	position: absolute
+	top: 5px
+	left: 5px
 	padding: 8px 0
 	text-align: center
 	box-sizing: border-box
@@ -360,6 +420,30 @@ strong
 	font-weight: normal
 	font-size: 14px
 	color: #333333
+
+.product-card__preview
+	width: 144px
+	height: auto
+.product-card__desc
+	margin-left: 160px
+.product-card__preview_inline
+	float: left
+.product-card__link_inline
+	text-align: left
+.product-card__text
+	font-size: 13px
+	margin: 0
+.product-card__text_inline
+	margin: 8px 0 0
+.product-card__button
+	margin-top: 8px
+	padding: 3px 5px
+	font-family: "ProximaNovaLight", $helvetica
+	font-weight: normal
+	font-size: 14px
+
+
+
 /* end .product-card */
 
 
@@ -380,9 +464,6 @@ strong
 	&:hover
 		color: #fff
 /* end .section-call-bottom */
-
-
-
 
 
 /* .footer-menu */
@@ -667,26 +748,7 @@ footer
 	margin-right: 15px
 /* end .cart-total */
 
-/* .button */
-.button
-	border: none
-	outline: none
-	border-radius: 4px
-	font-family: "ProximaNovaSemibold", $helvetica
-	font-weight: normal
-	font-size: 15px
-	cursor: pointer
-.button_green
-	+linear-gradient(to top, #6b9d2c, #87c33f)
-	color: #fff
-	&:hover
-		+linear-gradient(to bottom, #6b9d2c, #87c33f)
-.button_red
-	background-color: #ce5b4f
-	border: 2px solid #ce5b4f
-	&:hover
-		background-color: transparent
-/* end .button */
+
 
 /* .cart-form */
 .cart-form
@@ -842,23 +904,49 @@ footer
 .filter__subtitle
 	color: #473a21
 	font-size: 13px
-	margin-top: 5px
+	margin-top: 8px
 	display: inline-block
 
 .filter__form
+	padding-bottom: 40px
 	+clearfix
 
 .filter__input-group
 	float: left
 	text-align: left
+	margin-top: 25px
 	width: 50%
-	padding: 0 20px
+	padding: 0 13px
 	box-sizing: border-box
-	.SumoSelect
-		width: 100%
+.filter__label
+	font-size: 13px
+	color: #473a21
 .filter__control
 	width: 100%
-
+.filter__control_select
+	margin-top: 5px
+	height: 40px
+.filter__control_double
+	margin-top: 5px
+	display: table
+.filter__glue_input
+	width: 0
+	display: table-cell
+.filter__control_input
+	height: 40px
+	padding: 6px 10px
+	border: 1px solid #f9ead3
+	background-color: #fff
+	font-size: 12px
+	color: #555555
+	box-sizing: border-box
+	display: table-cell
+	outline: 0
+.filter__control_first
+	border-radius: 4px 0 0 4px
+.filter__control_last
+	border-radius: 0 4px 4px 0
+	border-left: 0
 
 .filter__footer
 	background-color: #f4e9d4
@@ -866,9 +954,34 @@ footer
 .filter__button
 	padding: 12px 35px
 .filter__text
-	margin: 0
-	
+	margin: 10px 0 0
+.filter__link
+	color: #eb5c4e
+	text-decoration: underline
+	&:hover
+		text-decoration: none
 /* end .filter */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -884,6 +997,37 @@ footer
 .content
 	margin: 10px 0
 	padding: 0 20px
+	box-sizing: border-box
+.content__text
+	margin: 10px 0
+.content__title
+	font-weight: normal
+	font-size: 22px
+	margin: 15px 0 0
+.content__subtitle
+	font-family: "ProximaNovaSemibold", $helvetica
+	font-weight: normal
+	font-size: 14px
+	margin: 10px 0 0
+.content__picture_full
+	margin: 5px 0
+	width: 100%
+.content__link
+	color: #007eff
+	text-decoration: underline
+	&:hover
+		text-decoration: none
+.content__link_big
+	font-size: 18px
+
+.content__list
+	list-style-type: none
+	margin: 0
+	padding: 0
+
+.content__listnum
+	margin: 0
+	padding-left: 20px
 	box-sizing: border-box
 /* end .content*/
 

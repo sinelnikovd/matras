@@ -111,17 +111,21 @@
           </div>
           <div class="filter__input-group">
             <label class="filter__label">Цена в рублях</label>
-            <input type="text" name="pricefrom" class="filter__control filter__control_input filter__control_first">
-            <input type="text" name="priceto" class="filter__control filter__control_input filter__control_last">
+            <div class="filter__control_double">
+              <input type="text" name="pricefrom" placeholder="от" class="filter__control filter__control_input filter__control_first"><span class="filter__glue_input"></span>
+              <input type="text" name="priceto" placeholder="до" class="filter__control filter__control_input filter__control_last">
+            </div>
           </div>
           <div class="filter__input-group">
             <label class="filter__label">Размер в см</label>
-            <input type="number" name="width" class="filter__control filter__control_input filter__control_first">
-            <input type="number" name="height" class="filter__control filter__control_input filter__control_last">
+            <div class="filter__control_double">
+              <input type="number" name="width" class="filter__control filter__control_input filter__control_first"><span class="filter__glue_input"></span>
+              <input type="number" name="height" class="filter__control filter__control_input filter__control_last">
+            </div>
           </div>
           <div class="filter__input-group">
             <label class="filter__label">Жесткость 1-ой стороны
-              <select name="type" class="filter__control filter__control_select sumoselect">
+              <select name="type" data-width="100%" class="filter__control filter__control_select sumoselect">
                 <option value="1">Любой</option>
                 <option value="2">Не любой</option>
                 <option value="3">Конкретный</option>
@@ -131,7 +135,7 @@
           </div>
           <div class="filter__input-group">
             <label class="filter__label">Жесткость 2-ой стороны
-              <select name="brend" class="filter__control filter__control_select sumoselect">
+              <select name="brend" data-width="100%" class="filter__control filter__control_select sumoselect">
                 <option value="1">Все</option>
                 <option value="2">Не любой</option>
                 <option value="3">Конкретный</option>
@@ -373,12 +377,12 @@
     <script>
       var scr = {"scripts":[
       {"src" : "libs/modernizr/modernizr.js", "async" : false},
-      {"src" : "libs/jquery/jquery-1.11.2.min.js", "async" : false},
+      {"src" : "libs/jquery/jquery-1.12.0.min.js", "async" : false},
       {"src" : "libs/inputmask/input.mask.js", "async" : false},
       {"src" : "libs/magnific-popup/jquery.magnific-popup.min.js", "async" : false},
       {"src" : "libs/owl/owl.carousel.min.js", "async" : false},
       {"src" : "libs/sly/sly.min.js", "async" : false},
-      {"src" : "libs/sumoselect/jquery.sumoselect.min.js", "async" : false},
+      {"src" : "libs/nice-select/jquery.nice-select.min.js", "async" : false},
       {"src" : "js/common.js", "async" : false}
       ]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
     </script>

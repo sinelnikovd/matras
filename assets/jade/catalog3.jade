@@ -1,15 +1,18 @@
 extends ./template/template.jade
 
 block title
-	title Каталог 4
+	title Каталог 3
 
 block style
-	link(rel="stylesheet" href="_catalog4.min.css")
+	link(rel="stylesheet" href="_catalog3.min.css")
 
 block content
 	include ./template/header.jade
 	include ./template/section-call-top.jade
-	include ./template/category-navigation.jade
+	- var breadcrumbs_border = true
+	include ./template/breadcrumbs.jade
+
+
 	.container
 		.product-cards-slider
 			h2.product-cards-slider__title

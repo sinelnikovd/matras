@@ -1,0 +1,113 @@
+extends ./template/template.jade
+
+block title
+	title Акция
+
+block style
+	link(rel="stylesheet" href="_contact.min.css")
+
+block content
+	include ./template/header.jade
+	include ./template/section-call-top.jade
+	.container
+		.content
+			h2.content__title Контакты
+
+	.timework
+		.container
+			p.timework__text
+				strong График работы:
+				|  9:00 до 21:00 - ужудневно
+
+	.container
+		.content
+			.contact-title
+				i.icon.icon_phoneround.contact-title__icon
+				span.contact-title__text Телефоны
+			ul.content__list.contact__list
+				li.content__item.contact__item
+					a(href="tel:+7(495) 357-26-60").content__link +7(495) 357-26-60
+					|  - Москва
+				li.content__item.contact__item
+					a(href="tel:+7(495) 357-26-60").content__link +7(495) 357-26-60
+					|  - Санкт-Петербург
+				li.content__item.contact__item
+					a(href="tel:+7(495) 357-26-60").content__link +7(495) 357-26-60
+					|  - Краснодар
+				li.content__item.contact__item
+					a(href="tel:+7(495) 357-26-60").content__link +7(495) 357-26-60
+					|  - Ростов-на-Дону
+				li.content__item.contact__item
+					a(href="tel:+7(495) 357-26-60").content__link +7(495) 357-26-60
+					|  - Екатеринбург
+				li.content__item.contact__item
+					strong
+						a(href="tel:+7(495) 357-26-60").content__link +7(495) 357-26-60
+						|  - бесплатный звонок по России
+			.contact-title
+				i.icon.icon_mail.contact-title__icon
+				span.contact-title__text Электронная почта
+			ul.content__list.contact__list
+				li.content__item.contact__item
+					a(href="mailto:zakaz@matras.ru").content__link zakaz@matras.ru
+					|  - любые вопросы, связанные с заказами
+				li.content__item.contact__item
+					a(href="mailto:garant@matras.ru").content__link garant@matras.ru
+					|  - гарантийный отдел
+				li.content__item.contact__item
+					a(href="mailto:trade@matras.ru").content__link trade@matras.ru
+					|  - для оптовых заказов и коммерческих предложений
+				li.content__item.contact__item
+					a(href="mailto:company@matras.ru").content__link company@matras.ru
+					|  - связь с руководством
+			.contact-title
+				i.icon.icon_car.contact-title__icon
+				span.contact-title__text Доставка возможна в следующих регионах
+			ul.content__list.contact__list
+				li.content__item.contact__item
+					a(href="#").content__link Москва и Московская область
+				li.content__item.contact__item
+					a(href="#").content__link Санкт-Петербург и Ленинградская область
+				li.content__item.contact__item
+					a(href="#").content__link Краснодар и Краснодарский край
+				li.content__item.contact__item
+					a(href="#").content__link Ростов на дону и Ростовская обалсть
+				li.content__item.contact__item
+					a(href="#").content__link Екатеринбург и Свердловска область
+			.contact-title
+				i.icon.icon_doc.contact-title__icon
+				span.contact-title__text Реквизиты юридического лица
+			ul.content__list
+				li.content__item.contact__item ООО "Матрас Интер Рус"
+				li.content__item.contact__item ОРГН: 114746944718 
+				li.content__item.contact__item ИИН: 7701405015
+				li.content__item.contact__item КПП: 770101001
+				li.content__item.contact__item ОКПО: 17245585
+				li.content__item.contact__item ОКАТО: 45286555000
+				li.content__item.contact__item ОКТМО: 45375000000
+				li.content__item.contact__item Адрес офиса: г. Москва, ул.Космонавта Волкова, д. 6А
+			p.content__text
+				span.text_gray Выставочного зала по данному адресу нет
+
+	.feedback
+		.container
+			h2.feedback__title Обратная связь
+			form(action="/").feedback__form
+				label.feedback__label Ваше имя
+					input(type="text" name="name").feedback__input
+				label.feedback__label Телефон или электронная почта
+					input(type="text" name="phone").feedback__input
+				label.feedback__label Сообщение
+					textarea(name="", rows="7").feedback__textarea
+				button(type="submit").button.button_red.feedback__button Отправить
+
+
+
+
+
+
+
+	include ./template/section-call-bottom.jade
+	include ./template/footer.jade
+	include ./template/social.jade
+	include ./template/cart.jade

@@ -74,22 +74,26 @@ block content
 								option(value="4") Всякий
 					.filter__input-group
 						label.filter__label Цена в рублях
-						input(type="text" name="pricefrom").filter__control.filter__control_input.filter__control_first
-						input(type="text" name="priceto").filter__control.filter__control_input.filter__control_last
+						.filter__control_double
+							input(type="text" name="pricefrom" placeholder="от").filter__control.filter__control_input.filter__control_first
+							span.filter__glue_input
+							input(type="text" name="priceto" placeholder="до").filter__control.filter__control_input.filter__control_last
 					.filter__input-group
 						label.filter__label Размер в см
-						input(type="number" name="width").filter__control.filter__control_input.filter__control_first
-						input(type="number" name="height").filter__control.filter__control_input.filter__control_last
+						.filter__control_double
+							input(type="number" name="width").filter__control.filter__control_input.filter__control_first
+							span.filter__glue_input
+							input(type="number" name="height").filter__control.filter__control_input.filter__control_last
 					.filter__input-group
 						label.filter__label Жесткость 1-ой стороны
-							select(name="type").filter__control.filter__control_select.sumoselect
+							select(name="type" data-width="100%").filter__control.filter__control_select.sumoselect
 								option(value="1") Любой
 								option(value="2") Не любой
 								option(value="3") Конкретный
 								option(value="4") Всякий
 					.filter__input-group
 						label.filter__label Жесткость 2-ой стороны
-							select(name="brend").filter__control.filter__control_select.sumoselect
+							select(name="brend" data-width="100%").filter__control.filter__control_select.sumoselect
 								option(value="1") Все
 								option(value="2") Не любой
 								option(value="3") Конкретный
@@ -100,7 +104,6 @@ block content
 					p.filter__text
 						a(href="#").filter__link Наш менеджер может помочь вам
 						|  с любым дополнительным параметром
-
 
 
 	.section-hits

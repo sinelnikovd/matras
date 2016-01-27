@@ -1,0 +1,57 @@
+extends ./template/template.jade
+
+block title
+	title О компании
+
+block style
+	link(rel="stylesheet" href="_company.min.css")
+
+block content
+	include ./template/header.jade
+	include ./template/section-call-top.jade
+	.container
+		.content
+			h2.content__title О компании
+			p.content__text
+				strong Компания MATRAS.ru (ООО "Матрас интер рус") - это федеральный интернет-магазин матрасов и товаров для сна.
+			p.content__text Наши представительства есть в Москве, Санкт-Петербурге, Ростове-на-дону, Воронеже, Екатеринбурге, Новосибирске и других городах, а доставку мы можем осуществить в любой населенный пункт на территории РФ.
+			p.content__text Центральный офис нашей компании находиться в Москве по адресу: ул. Космонавта Волкова, д. 6А.
+
+			p.content__text Реквизиты юридического лица <br>ООО "Матрас Интер Рус" <br>ОРГН: 114746944718 <br>ИИН: 7701405015 <br>КПП: 770101001 <br>ОКПО: 17245585 <br>ОКАТО: 45286555000 <br>ОКТМО: 45375000000
+	.hr.hr_gray
+	.container
+		.trust
+			h2.trust__title Почему нам можно доверять?
+			ul.trust__list
+				li.trust__item
+					i.icon.icon_line.trust__icon
+					span.trust__text Нестандартные размеры без предоплаты
+				li.trust__item
+					i.icon.icon_like.trust__icon
+					span.trust__text Гарантия лучшей цены
+				li.trust__item
+					i.icon.icon_box.trust__icon
+					span.trust__text Доставка по всей России
+				li.trust__item
+					i.icon.icon_gift.trust__icon
+					span.trust__text Скидка до 50%
+				li.trust__item
+					i.icon.icon_calendar.trust__icon
+					span.trust__text Работаем без выходных
+				li.trust__item
+					i.icon.icon_star.trust__icon
+					span.trust__text Фирменная гарантия на всю продукцию
+				li.trust__item
+					i.icon.icon_cup.trust__icon
+					span.trust__text 10 лет на рынке
+				li.trust__item
+					i.icon.icon_orden.trust__icon
+					span.trust__text Статус официального дилера
+
+
+
+
+	include ./template/section-call-bottom.jade
+	include ./template/footer.jade
+	include ./template/social.jade
+	include ./template/cart.jade

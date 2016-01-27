@@ -1,0 +1,35 @@
+extends ./template/template.jade
+
+block title
+	title Акция
+
+block style
+	link(rel="stylesheet" href="_action.min.css")
+
+block content
+	include ./template/header.jade
+	include ./template/section-call-top.jade
+	.container
+		.content
+			h2.content__title Суперакция на матрасы Promtex Orient
+			p.content__text Магазин MATRAS.RU как официальный диллер высокотехничных матрасов promtex Orient на территории России представляет: Скидки на матрасы до 45%
+			h3.content__subtitle.content__subtitle_action Специальные условия от нашего магазина:
+			ol.content__listnum
+				li.content__listnum-item Любые нестандартные размеры бес предоплаты
+				li.content__listnum-item Доставка по всей России
+				li.content__listnum-item Гарантированно лучшие цены без накруток посредников
+
+	.hr.hr_gray
+	.container
+		.product-cards-inline
+			include ./template/product-card_inline.jade
+			include ./template/product-card_inline.jade
+			include ./template/product-card_inline.jade
+			include ./template/product-card_inline.jade
+
+
+
+	include ./template/section-call-bottom.jade
+	include ./template/footer.jade
+	include ./template/social.jade
+	include ./template/cart.jade

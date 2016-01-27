@@ -1,0 +1,29 @@
+extends ./template/template.jade
+
+block title
+	title Каталог 5
+
+block style
+	link(rel="stylesheet" href="_catalog5.min.css")
+
+block content
+	include ./template/header.jade
+	include ./template/section-call-top.jade
+	- var breadcrumbs_border = true
+	include ./template/breadcrumbs.jade
+
+
+	.container
+		.product-cards-inline
+			include ./template/product-card_inline.jade
+			include ./template/product-card_inline.jade
+			include ./template/product-card_inline.jade
+			include ./template/product-card_inline.jade
+
+	include ./template/pagination.jade
+	include ./template/section-call-bottom.jade
+	include ./template/footer.jade
+	include ./template/social.jade
+	include ./template/cart.jade
+
+

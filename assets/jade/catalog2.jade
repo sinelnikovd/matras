@@ -1,0 +1,40 @@
+extends ./template/template.jade
+
+block title
+	title Каталог 2
+
+block style
+	link(rel="stylesheet" href="_catalog2.min.css")
+
+block content
+	include ./template/header.jade
+	include ./template/section-call-top.jade
+	include ./template/breadcrumbs.jade
+
+	.sorting
+		.container
+			form(action="/").sorting__form
+				label.sorting__label Сортировать:
+					select(name="sorting").sorting__select
+						option(value="1") Все
+						option(value="2") Новые
+						option(value="3") Любые
+						option(value="4") Всякие
+				label.sorting__label Вывести по:
+					select(name="sorting").sorting__select
+						- for (var x = 10; x <= 100; x=x+10)
+							option= x
+
+
+	.container
+		.product-cards-inline
+			include ./template/product-card_inline.jade
+			include ./template/product-card_inline.jade
+			include ./template/product-card_inline.jade
+			include ./template/product-card_inline.jade
+
+	include ./template/pagination.jade
+	include ./template/section-call-bottom.jade
+	include ./template/footer.jade
+	include ./template/social.jade
+	include ./template/cart.jade
