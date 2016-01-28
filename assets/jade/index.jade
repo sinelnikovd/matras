@@ -59,45 +59,45 @@ block content
 			form(action="/").filter__form
 				.container
 					.filter__input-group
-						label.filter__label Тип
-							select(name="type").filter__control.filter__control_select.sumoselect
-								option(value="1") Любой
-								option(value="2") Не любой
-								option(value="3") Конкретный
-								option(value="4") Всякий
+						label(for="type").filter__label Тип
+						select(name="type")#type.filter__control.filter__control_select.wide
+							option(value="1") Любой
+							option(value="2") Не любой
+							option(value="3") Конкретный
+							option(value="4") Всякий
 					.filter__input-group
-						label.filter__label Бренд
-							select(name="brend").filter__control.filter__control_select.sumoselect
-								option(value="1") Все
-								option(value="2") Не любой
-								option(value="3") Конкретный
-								option(value="4") Всякий
+						label(for="brend").filter__label Бренд
+						select(name="brend")#brend.filter__control.filter__control_select.wide
+							option(value="1") Все
+							option(value="2") Не любой
+							option(value="3") Конкретный
+							option(value="4") Всякий
 					.filter__input-group
 						label.filter__label Цена в рублях
 						.filter__control_double
-							input(type="text" name="pricefrom" placeholder="от").filter__control.filter__control_input.filter__control_first
+							input(type="number" name="pricefrom" placeholder="от").filter__control.filter__control_input.filter__control_first
 							span.filter__glue_input
-							input(type="text" name="priceto" placeholder="до").filter__control.filter__control_input.filter__control_last
+							input(type="number" name="priceto" placeholder="до").filter__control.filter__control_input.filter__control_last
 					.filter__input-group
 						label.filter__label Размер в см
 						.filter__control_double
-							input(type="number" name="width").filter__control.filter__control_input.filter__control_first
+							input(type="number" name="width" placeholder="Ширина").filter__control.filter__control_input.filter__control_first
 							span.filter__glue_input
-							input(type="number" name="height").filter__control.filter__control_input.filter__control_last
+							input(type="number" name="height" placeholder="Высота").filter__control.filter__control_input.filter__control_last
 					.filter__input-group
-						label.filter__label Жесткость 1-ой стороны
-							select(name="type" data-width="100%").filter__control.filter__control_select.sumoselect
-								option(value="1") Любой
-								option(value="2") Не любой
-								option(value="3") Конкретный
-								option(value="4") Всякий
+						label(for="first-side").filter__label Жесткость 1-ой стороны
+						select(name="first-side")#first-side.filter__control.filter__control_select.wide
+							option(value="1") Любой
+							option(value="2") Не любой
+							option(value="3") Конкретный
+							option(value="4") Всякий
 					.filter__input-group
-						label.filter__label Жесткость 2-ой стороны
-							select(name="brend" data-width="100%").filter__control.filter__control_select.sumoselect
-								option(value="1") Все
-								option(value="2") Не любой
-								option(value="3") Конкретный
-								option(value="4") Всякий
+						label(for="last-side").filter__label Жесткость 2-ой стороны
+						select(name="last-side")#last-side.filter__control.filter__control_select.wide
+							option(value="1") Все
+							option(value="2") Не любой
+							option(value="3") Конкретный
+							option(value="4") Всякий
 			.filter__footer
 				.container
 					button(type="submit").button.button_green.filter__button Подобрать
@@ -163,7 +163,8 @@ block content
 
 	.banner
 		.container
-			span.banner__close
+			i.icon.icon_close.banner__close
+
 			a(href="#").banner__link
 				img(src="img/banners.jpg", alt="").banner__picture
 				span.banner__text Суперакция: матрасы Promtex Orient со скидкой до 45%
@@ -172,7 +173,7 @@ block content
 
 
 block popup
-	.cart-popup
+	.cart-popup.popup
 		h2.cart-popup__title Корзина
 		p.cart-popup__description В случае, если у Вас появились какие то проблемы 
 			a(href="tel:+74953572984").cart-popup__calllink +7(495) 357-29-84
@@ -192,7 +193,7 @@ block popup
 				a(href="javascript:void();").cart-popup__link Заполнить самостоятельно
 
 
-	.decor-popup
+	.decor-popup.popup
 		h2.decor-popup__title Оформление заказа
 		form(action="/").decor-popup__form
 			label.decor-popup__label Ваше имя и фамилия*
@@ -210,7 +211,7 @@ block popup
 				textarea(name="", rows="4").decor-popup__textarea
 			button(type="submit").button.button_green.decor-popup__button Отправить заказ
 
-	.product-popup
+	.product-popup.popup
 		h2.product-popup__title Матрас Virtuoz Респект
 		.product-carousel.product-popup__carousel
 			.product-carousel__items
@@ -219,17 +220,15 @@ block popup
 				img(src="img/slide3.jpg", alt="")
 				img(src="img/slide4.jpg", alt="")
 			.product-carousel__navigation
-				.product-carousel__prev
-					i.icon.icon_prev
-				.product-carousel__next
-					i.icon.icon_next
+				i.icon.icon_prev.product-carousel__prev
+				i.icon.icon_next.product-carousel__next
 		.product-popup-form.product-popup__form
 			.product-popup-form__block
 				.product-popup-form__part.product-popup-form__part_left
-					.product-popup-form__newprice 7 500
-						i.rubl
-					.product-popup-form__oldprice 10 500
-						i.rubl
+					span.product-popup-form__newprice 7 500
+						i.currency.currency_big
+					span.product-popup-form__oldprice 10 500
+						i.currency.currency_small
 				.product-popup-form__part.product-popup-form__part_right
 					.product-popup-form__availability
 						i.icon.icon_ok
@@ -237,11 +236,11 @@ block popup
 			.hr.product-popup-form__hr
 			.product-popup-form__block
 				.product-popup-form__part.product-popup-form__part_left
-					label.product-popup-form__label Выберете размер
-						select.product-popup__select
-							option(value="1") Любой
-							option(value="1") Другой
-							option(value="1") Всякий
+					label(for="size").product-popup-form__label Выберете размер
+					select(name="size")#size.product-popup__select
+						option(value="1") Любой
+						option(value="1") Другой
+						option(value="1") Всякий
 				.product-popup-form__part.product-popup-form__part_right
 					p.product-popup-form__question Нужен другой размер?
 					button.button.product-popup-form__button.product-popup-form__button_call Позвонить
@@ -254,6 +253,55 @@ block popup
 			a(href="#").product-popup-form__link Информация о доставке
 
 
+
+	.filter-popup.popup
+		h2.filter__titile.filter-popup__title Фильтр по параметрам
+		form(action="/").filter__form
+			.filter__input-group
+				label(for="type").filter__label Тип
+				select(name="type")#type.filter__control.filter__control_select.wide
+					option(value="1") Любой
+					option(value="2") Не любой
+					option(value="3") Конкретный
+					option(value="4") Всякий
+			.filter__input-group
+				label(for="brend").filter__label Бренд
+				select(name="brend")#brend.filter__control.filter__control_select.wide
+					option(value="1") Все
+					option(value="2") Не любой
+					option(value="3") Конкретный
+					option(value="4") Всякий
+			.filter__input-group
+				label.filter__label Цена в рублях
+				.filter__control_double
+					input(type="number" name="pricefrom" placeholder="от").filter__control.filter__control_input.filter__control_first
+					span.filter__glue_input
+					input(type="number" name="priceto" placeholder="до").filter__control.filter__control_input.filter__control_last
+			.filter__input-group
+				label.filter__label Размер в см
+				.filter__control_double
+					input(type="number" name="width" placeholder="Ширина").filter__control.filter__control_input.filter__control_first
+					span.filter__glue_input
+					input(type="number" name="height" placeholder="Высота").filter__control.filter__control_input.filter__control_last
+			.filter__input-group
+				label(for="first-side").filter__label Жесткость 1-ой стороны
+				select(name="first-side")#first-side.filter__control.filter__control_select.wide
+					option(value="1") Любой
+					option(value="2") Не любой
+					option(value="3") Конкретный
+					option(value="4") Всякий
+			.filter__input-group
+				label(for="last-side").filter__label Жесткость 2-ой стороны
+				select(name="last-side")#last-side.filter__control.filter__control_select.wide
+					option(value="1") Все
+					option(value="2") Не любой
+					option(value="3") Конкретный
+					option(value="4") Всякий
+		.filter__footer
+			button(type="submit").button.button_green.filter__button Подобрать
+			p.filter__text
+				a(href="#").filter__link Наш менеджер может помочь вам
+				|  с любым дополнительным параметром
 
 
 

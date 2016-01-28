@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Контакты</title>
+    <title>Каталог 2</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <link rel="stylesheet" href="_contact.min.css">
+    <link rel="stylesheet" href="_search-result.min.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
@@ -58,69 +58,87 @@
     </div>
     <div class="container">
       <div class="content">
-        <h2 class="content__title">Контакты</h2>
+        <h2 class="content__title">Результат поиска</h2>
       </div>
     </div>
-    <div class="timework">
+    <div class="search-result">
       <div class="container">
-        <p class="timework__text"><strong>График работы:</strong> 9:00 до 21:00 - ужудневно</p>
+        <form action="/" class="search-result__form">
+          <input type="text" class="search-result__input">
+          <button type="submit" class="search-result__button"><i class="icon icon_search"></i></button>
+        </form>
+        <p class="search-result__text">По вашему запросу найдено 9999 вариантов.</p>
+      </div>
+    </div>
+    <div class="sorting sorting_background_fff">
+      <div class="container">
+        <form action="/" class="sorting__form">
+          <div class="sorting__input-group sorting__input-group_sorting">
+            <label for="sorting" class="sorting__label">Сортировать:</label>
+            <select name="sorting" id="sorting" class="sorting__select sorting__select_sorting wide">
+              <option value="1">Все</option>
+              <option value="2">Новые</option>
+              <option value="3">Любые</option>
+              <option value="4">Всякие</option>
+            </select>
+          </div>
+          <div class="sorting__input-group sorting__input-group_count">
+            <label for="count" class="sorting__label">Вывести по:</label>
+            <select name="count" id="count" class="sorting__select sorting__select_count wide">
+              <option>10</option>
+              <option>20</option>
+              <option>30</option>
+              <option>40</option>
+              <option>50</option>
+              <option>60</option>
+              <option>70</option>
+              <option>80</option>
+              <option>90</option>
+              <option>100</option>
+            </select>
+          </div>
+        </form>
       </div>
     </div>
     <div class="container">
-      <div class="content">
-        <div class="contact-title"><i class="icon icon_phoneround contact-title__icon"></i><span class="contact-title__text">Телефоны</span></div>
-        <ul class="content__list contact__list">
-          <li class="content__item contact__item"><a href="tel:+7(495) 357-26-60" class="content__link">+7(495) 357-26-60</a> - Москва</li>
-          <li class="content__item contact__item"><a href="tel:+7(495) 357-26-60" class="content__link">+7(495) 357-26-60</a> - Санкт-Петербург</li>
-          <li class="content__item contact__item"><a href="tel:+7(495) 357-26-60" class="content__link">+7(495) 357-26-60</a> - Краснодар</li>
-          <li class="content__item contact__item"><a href="tel:+7(495) 357-26-60" class="content__link">+7(495) 357-26-60</a> - Ростов-на-Дону</li>
-          <li class="content__item contact__item"><a href="tel:+7(495) 357-26-60" class="content__link">+7(495) 357-26-60</a> - Екатеринбург</li>
-          <li class="content__item contact__item"><strong><a href="tel:+7(495) 357-26-60" class="content__link">+7(495) 357-26-60</a> - бесплатный звонок по России</strong></li>
-        </ul>
-        <div class="contact-title"><i class="icon icon_mail contact-title__icon"></i><span class="contact-title__text">Электронная почта</span></div>
-        <ul class="content__list contact__list">
-          <li class="content__item contact__item"><a href="mailto:zakaz@matras.ru" class="content__link">zakaz@matras.ru</a> - любые вопросы, связанные с заказами</li>
-          <li class="content__item contact__item"><a href="mailto:garant@matras.ru" class="content__link">garant@matras.ru</a> - гарантийный отдел</li>
-          <li class="content__item contact__item"><a href="mailto:trade@matras.ru" class="content__link">trade@matras.ru</a> - для оптовых заказов и коммерческих предложений</li>
-          <li class="content__item contact__item"><a href="mailto:company@matras.ru" class="content__link">company@matras.ru</a> - связь с руководством</li>
-        </ul>
-        <div class="contact-title"><i class="icon icon_car contact-title__icon"></i><span class="contact-title__text">Доставка возможна в следующих регионах</span></div>
-        <ul class="content__list contact__list">
-          <li class="content__item contact__item"><a href="#" class="content__link">Москва и Московская область</a></li>
-          <li class="content__item contact__item"><a href="#" class="content__link">Санкт-Петербург и Ленинградская область</a></li>
-          <li class="content__item contact__item"><a href="#" class="content__link">Краснодар и Краснодарский край</a></li>
-          <li class="content__item contact__item"><a href="#" class="content__link">Ростов на дону и Ростовская обалсть</a></li>
-          <li class="content__item contact__item"><a href="#" class="content__link">Екатеринбург и Свердловска область</a></li>
-        </ul>
-        <div class="contact-title"><i class="icon icon_doc contact-title__icon"></i><span class="contact-title__text">Реквизиты юридического лица</span></div>
-        <ul class="content__list">
-          <li class="content__item contact__item">ООО "Матрас Интер Рус"</li>
-          <li class="content__item contact__item">ОРГН: 114746944718 </li>
-          <li class="content__item contact__item">ИИН: 7701405015</li>
-          <li class="content__item contact__item">КПП: 770101001</li>
-          <li class="content__item contact__item">ОКПО: 17245585</li>
-          <li class="content__item contact__item">ОКАТО: 45286555000</li>
-          <li class="content__item contact__item">ОКТМО: 45375000000</li>
-          <li class="content__item contact__item">Адрес офиса: г. Москва, ул.Космонавта Волкова, д. 6А</li>
-        </ul>
-        <p class="content__text"><span class="text_gray">Выставочного зала по данному адресу нет</span></p>
+      <div class="product-cards-inline">
+        <div class="product-card product-card_inline"><a href="javascript:void();" class="product-card__link product-card__link_inline"><span class="product-card__sale">-25%</span><img src="img/hit_matras-Promtex-Orient-Soft-Temple.jpg" alt="" class="product-card__preview product-card__preview_inline">
+            <div class="product-card__desc">
+              <h5 class="product-card__title product-card__title_inline">Eco Hard 1 TFK</h5>
+              <p class="product-card__text product-card__text_inline">Жесткость: средняя Высота: 10см. Нагрузка на одно спальное место: до 80кг. Невысокий матрас.</p>
+              <button class="button button_border_red product-card__button">Купить за 5990 <i class="currency currency_small"></i></button>
+            </div></a></div>
+        <div class="product-card product-card_inline"><a href="javascript:void();" class="product-card__link product-card__link_inline"><span class="product-card__sale">-25%</span><img src="img/hit_matras-Promtex-Orient-Soft-Temple.jpg" alt="" class="product-card__preview product-card__preview_inline">
+            <div class="product-card__desc">
+              <h5 class="product-card__title product-card__title_inline">Eco Hard 1 TFK</h5>
+              <p class="product-card__text product-card__text_inline">Жесткость: средняя Высота: 10см. Нагрузка на одно спальное место: до 80кг. Невысокий матрас.</p>
+              <button class="button button_border_red product-card__button">Купить за 5990 <i class="currency currency_small"></i></button>
+            </div></a></div>
+        <div class="product-card product-card_inline"><a href="javascript:void();" class="product-card__link product-card__link_inline"><span class="product-card__sale">-25%</span><img src="img/hit_matras-Promtex-Orient-Soft-Temple.jpg" alt="" class="product-card__preview product-card__preview_inline">
+            <div class="product-card__desc">
+              <h5 class="product-card__title product-card__title_inline">Eco Hard 1 TFK</h5>
+              <p class="product-card__text product-card__text_inline">Жесткость: средняя Высота: 10см. Нагрузка на одно спальное место: до 80кг. Невысокий матрас.</p>
+              <button class="button button_border_red product-card__button">Купить за 5990 <i class="currency currency_small"></i></button>
+            </div></a></div>
+        <div class="product-card product-card_inline"><a href="javascript:void();" class="product-card__link product-card__link_inline"><span class="product-card__sale">-25%</span><img src="img/hit_matras-Promtex-Orient-Soft-Temple.jpg" alt="" class="product-card__preview product-card__preview_inline">
+            <div class="product-card__desc">
+              <h5 class="product-card__title product-card__title_inline">Eco Hard 1 TFK</h5>
+              <p class="product-card__text product-card__text_inline">Жесткость: средняя Высота: 10см. Нагрузка на одно спальное место: до 80кг. Невысокий матрас.</p>
+              <button class="button button_border_red product-card__button">Купить за 5990 <i class="currency currency_small"></i></button>
+            </div></a></div>
       </div>
     </div>
-    <div class="feedback">
+    <div class="pagination">
       <div class="container">
-        <h2 class="feedback__title">Обратная связь</h2>
-        <form action="/" class="feedback__form">
-          <label class="feedback__label">Ваше имя
-            <input type="text" name="name" class="feedback__input">
-          </label>
-          <label class="feedback__label">Телефон или электронная почта
-            <input type="text" name="phone" class="feedback__input">
-          </label>
-          <label class="feedback__label">Сообщение
-            <textarea name="" rows="7" class="feedback__textarea"></textarea>
-          </label>
-          <button type="submit" class="button button_red feedback__button">Отправить</button>
-        </form>
+        <ul class="pagination-list">
+          <li class="pagination-list__item"><a href="#" class="pagination-list__link">&#8592; Назад</a></li>
+          <li class="pagination-list__item"><a href="#" class="pagination-list__link active">1</a></li>
+          <li class="pagination-list__item"><a href="#" class="pagination-list__link">2</a></li>
+          <li class="pagination-list__item"><a href="#" class="pagination-list__link">3</a></li>
+          <li class="pagination-list__item"><a href="#" class="pagination-list__link">4</a></li>
+          <li class="pagination-list__item"><a href="#" class="pagination-list__link">5</a></li>
+          <li class="pagination-list__item"><a href="#" class="pagination-list__link">Вперед &#8594;</a></li>
+        </ul>
       </div>
     </div>
     <div class="section-call-bottom">

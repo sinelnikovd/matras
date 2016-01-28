@@ -30,6 +30,24 @@ $(document).ready(function() {
 		closeMarkup: '<button title="%title%" type="button" class="mfp-close icon icon_close"></button>'
 	});
 
+	$('.header-button__link_filter').magnificPopup({
+		items: {
+			src: '.filter-popup',
+			type: 'inline'
+		},
+		closeMarkup: '<button title="%title%" type="button" class="mfp-close icon icon_close"></button>'
+	});
+
+
+	$('.header-button__link_menu').click(function(){
+		$('.header__navigation').toggleClass("open");
+	});
+
+	$('.banner__close').click(function(){
+		$('.banner').remove();
+	});
+
+
 	var carouselCustomer = $('.product-carousel__items').owlCarousel({
 		loop: true,
 		nav: false,

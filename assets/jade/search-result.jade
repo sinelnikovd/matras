@@ -4,14 +4,25 @@ block title
 	title Каталог 2
 
 block style
-	link(rel="stylesheet" href="_catalog2.min.css")
+	link(rel="stylesheet" href="_search-result.min.css")
 
 block content
 	include ./template/header.jade
 	include ./template/section-call-top.jade
-	include ./template/breadcrumbs.jade
 
-	.sorting
+	.container
+		.content
+			h2.content__title Результат поиска
+
+	.search-result
+		.container
+			form(action="/").search-result__form
+				input(type="text").search-result__input
+				button(type="submit").search-result__button
+					i.icon.icon_search
+			p.search-result__text По вашему запросу найдено 9999 вариантов.
+
+	.sorting.sorting_background_fff
 		.container
 			form(action="/").sorting__form
 				.sorting__input-group.sorting__input-group_sorting

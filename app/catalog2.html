@@ -21,7 +21,7 @@
           <div class="logo header__logo"><a href="/" class="logo__link"><img src="img/logo.png" alt="" class="logo__image"></a></div>
           <ul class="header-button header__button">
             <li class="header-button__item"><a href="tel:888800000" class="header-button__link"><i class="icon icon_call header-button__icon"></i></a></li>
-            <li class="header-button__item"><a href="javascript:void();" class="header-button__link"><i class="icon icon_fillter header-button__icon"></i><span class="header-button__text">Фильтр</span></a></li>
+            <li class="header-button__item"><a href="javascript:void();" class="header-button__link header-button__link_filter"><i class="icon icon_fillter header-button__icon"></i><span class="header-button__text">Фильтр</span></a></li>
             <li class="header-button__item"><a href="javascript:void();" class="header-button__link header-button__link_menu"><i class="icon icon_menu header-button__icon"></i><span class="header-button__text">Каталог</span></a></li>
           </ul>
         </div>
@@ -67,16 +67,18 @@
     <div class="sorting">
       <div class="container">
         <form action="/" class="sorting__form">
-          <label class="sorting__label">Сортировать:
-            <select name="sorting" class="sorting__select">
+          <div class="sorting__input-group sorting__input-group_sorting">
+            <label for="sorting" class="sorting__label">Сортировать:</label>
+            <select name="sorting" id="sorting" class="sorting__select sorting__select_sorting wide">
               <option value="1">Все</option>
               <option value="2">Новые</option>
               <option value="3">Любые</option>
               <option value="4">Всякие</option>
             </select>
-          </label>
-          <label class="sorting__label">Вывести по:
-            <select name="sorting" class="sorting__select">
+          </div>
+          <div class="sorting__input-group sorting__input-group_count">
+            <label for="count" class="sorting__label">Вывести по:</label>
+            <select name="count" id="count" class="sorting__select sorting__select_count wide">
               <option>10</option>
               <option>20</option>
               <option>30</option>
@@ -88,7 +90,7 @@
               <option>90</option>
               <option>100</option>
             </select>
-          </label>
+          </div>
         </form>
       </div>
     </div>
@@ -98,25 +100,25 @@
             <div class="product-card__desc">
               <h5 class="product-card__title product-card__title_inline">Eco Hard 1 TFK</h5>
               <p class="product-card__text product-card__text_inline">Жесткость: средняя Высота: 10см. Нагрузка на одно спальное место: до 80кг. Невысокий матрас.</p>
-              <button class="button button_border_red product-card__button">Купить за 5990 <i class="currency"></i></button>
+              <button class="button button_border_red product-card__button">Купить за 5990 <i class="currency currency_small"></i></button>
             </div></a></div>
         <div class="product-card product-card_inline"><a href="javascript:void();" class="product-card__link product-card__link_inline"><span class="product-card__sale">-25%</span><img src="img/hit_matras-Promtex-Orient-Soft-Temple.jpg" alt="" class="product-card__preview product-card__preview_inline">
             <div class="product-card__desc">
               <h5 class="product-card__title product-card__title_inline">Eco Hard 1 TFK</h5>
               <p class="product-card__text product-card__text_inline">Жесткость: средняя Высота: 10см. Нагрузка на одно спальное место: до 80кг. Невысокий матрас.</p>
-              <button class="button button_border_red product-card__button">Купить за 5990 <i class="currency"></i></button>
+              <button class="button button_border_red product-card__button">Купить за 5990 <i class="currency currency_small"></i></button>
             </div></a></div>
         <div class="product-card product-card_inline"><a href="javascript:void();" class="product-card__link product-card__link_inline"><span class="product-card__sale">-25%</span><img src="img/hit_matras-Promtex-Orient-Soft-Temple.jpg" alt="" class="product-card__preview product-card__preview_inline">
             <div class="product-card__desc">
               <h5 class="product-card__title product-card__title_inline">Eco Hard 1 TFK</h5>
               <p class="product-card__text product-card__text_inline">Жесткость: средняя Высота: 10см. Нагрузка на одно спальное место: до 80кг. Невысокий матрас.</p>
-              <button class="button button_border_red product-card__button">Купить за 5990 <i class="currency"></i></button>
+              <button class="button button_border_red product-card__button">Купить за 5990 <i class="currency currency_small"></i></button>
             </div></a></div>
         <div class="product-card product-card_inline"><a href="javascript:void();" class="product-card__link product-card__link_inline"><span class="product-card__sale">-25%</span><img src="img/hit_matras-Promtex-Orient-Soft-Temple.jpg" alt="" class="product-card__preview product-card__preview_inline">
             <div class="product-card__desc">
               <h5 class="product-card__title product-card__title_inline">Eco Hard 1 TFK</h5>
               <p class="product-card__text product-card__text_inline">Жесткость: средняя Высота: 10см. Нагрузка на одно спальное место: до 80кг. Невысокий матрас.</p>
-              <button class="button button_border_red product-card__button">Купить за 5990 <i class="currency"></i></button>
+              <button class="button button_border_red product-card__button">Купить за 5990 <i class="currency currency_small"></i></button>
             </div></a></div>
       </div>
     </div>

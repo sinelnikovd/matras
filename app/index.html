@@ -21,7 +21,7 @@
           <div class="logo header__logo"><a href="/" class="logo__link"><img src="img/logo.png" alt="" class="logo__image"></a></div>
           <ul class="header-button header__button">
             <li class="header-button__item"><a href="tel:888800000" class="header-button__link"><i class="icon icon_call header-button__icon"></i></a></li>
-            <li class="header-button__item"><a href="javascript:void();" class="header-button__link"><i class="icon icon_fillter header-button__icon"></i><span class="header-button__text">Фильтр</span></a></li>
+            <li class="header-button__item"><a href="javascript:void();" class="header-button__link header-button__link_filter"><i class="icon icon_fillter header-button__icon"></i><span class="header-button__text">Фильтр</span></a></li>
             <li class="header-button__item"><a href="javascript:void();" class="header-button__link header-button__link_menu"><i class="icon icon_menu header-button__icon"></i><span class="header-button__text">Каталог</span></a></li>
           </ul>
         </div>
@@ -90,58 +90,54 @@
       <form action="/" class="filter__form">
         <div class="container">
           <div class="filter__input-group">
-            <label class="filter__label">Тип
-              <select name="type" class="filter__control filter__control_select sumoselect">
-                <option value="1">Любой</option>
-                <option value="2">Не любой</option>
-                <option value="3">Конкретный</option>
-                <option value="4">Всякий</option>
-              </select>
-            </label>
+            <label for="type" class="filter__label">Тип</label>
+            <select name="type" id="type" class="filter__control filter__control_select wide">
+              <option value="1">Любой</option>
+              <option value="2">Не любой</option>
+              <option value="3">Конкретный</option>
+              <option value="4">Всякий</option>
+            </select>
           </div>
           <div class="filter__input-group">
-            <label class="filter__label">Бренд
-              <select name="brend" class="filter__control filter__control_select sumoselect">
-                <option value="1">Все</option>
-                <option value="2">Не любой</option>
-                <option value="3">Конкретный</option>
-                <option value="4">Всякий</option>
-              </select>
-            </label>
+            <label for="brend" class="filter__label">Бренд</label>
+            <select name="brend" id="brend" class="filter__control filter__control_select wide">
+              <option value="1">Все</option>
+              <option value="2">Не любой</option>
+              <option value="3">Конкретный</option>
+              <option value="4">Всякий</option>
+            </select>
           </div>
           <div class="filter__input-group">
             <label class="filter__label">Цена в рублях</label>
             <div class="filter__control_double">
-              <input type="text" name="pricefrom" placeholder="от" class="filter__control filter__control_input filter__control_first"><span class="filter__glue_input"></span>
-              <input type="text" name="priceto" placeholder="до" class="filter__control filter__control_input filter__control_last">
+              <input type="number" name="pricefrom" placeholder="от" class="filter__control filter__control_input filter__control_first"><span class="filter__glue_input"></span>
+              <input type="number" name="priceto" placeholder="до" class="filter__control filter__control_input filter__control_last">
             </div>
           </div>
           <div class="filter__input-group">
             <label class="filter__label">Размер в см</label>
             <div class="filter__control_double">
-              <input type="number" name="width" class="filter__control filter__control_input filter__control_first"><span class="filter__glue_input"></span>
-              <input type="number" name="height" class="filter__control filter__control_input filter__control_last">
+              <input type="number" name="width" placeholder="Ширина" class="filter__control filter__control_input filter__control_first"><span class="filter__glue_input"></span>
+              <input type="number" name="height" placeholder="Высота" class="filter__control filter__control_input filter__control_last">
             </div>
           </div>
           <div class="filter__input-group">
-            <label class="filter__label">Жесткость 1-ой стороны
-              <select name="type" data-width="100%" class="filter__control filter__control_select sumoselect">
-                <option value="1">Любой</option>
-                <option value="2">Не любой</option>
-                <option value="3">Конкретный</option>
-                <option value="4">Всякий</option>
-              </select>
-            </label>
+            <label for="first-side" class="filter__label">Жесткость 1-ой стороны</label>
+            <select name="first-side" id="first-side" class="filter__control filter__control_select wide">
+              <option value="1">Любой</option>
+              <option value="2">Не любой</option>
+              <option value="3">Конкретный</option>
+              <option value="4">Всякий</option>
+            </select>
           </div>
           <div class="filter__input-group">
-            <label class="filter__label">Жесткость 2-ой стороны
-              <select name="brend" data-width="100%" class="filter__control filter__control_select sumoselect">
-                <option value="1">Все</option>
-                <option value="2">Не любой</option>
-                <option value="3">Конкретный</option>
-                <option value="4">Всякий</option>
-              </select>
-            </label>
+            <label for="last-side" class="filter__label">Жесткость 2-ой стороны</label>
+            <select name="last-side" id="last-side" class="filter__control filter__control_select wide">
+              <option value="1">Все</option>
+              <option value="2">Не любой</option>
+              <option value="3">Конкретный</option>
+              <option value="4">Всякий</option>
+            </select>
           </div>
         </div>
       </form>
@@ -262,11 +258,11 @@
       </div>
     </div>
     <div class="banner">
-      <div class="container"><span class="banner__close"></span><a href="#" class="banner__link"><img src="img/banners.jpg" alt="" class="banner__picture"><span class="banner__text">Суперакция: матрасы Promtex Orient со скидкой до 45%</span></a></div>
+      <div class="container"><i class="icon icon_close banner__close"></i><a href="#" class="banner__link"><img src="img/banners.jpg" alt="" class="banner__picture"><span class="banner__text">Суперакция: матрасы Promtex Orient со скидкой до 45%</span></a></div>
     </div>
     <div class="cart"><i class="icon icon_cart cart__icon"></i><span class="cart__count">2</span></div>
     <div class="hidden">
-      <div class="cart-popup">
+      <div class="cart-popup popup">
         <h2 class="cart-popup__title">Корзина</h2>
         <p class="cart-popup__description">В случае, если у Вас появились какие то проблемы <a href="tel:+74953572984" class="cart-popup__calllink">+7(495) 357-29-84</a></p>
         <div class="cart-item">
@@ -299,7 +295,7 @@
           <p class="cart-popup__text"><a href="javascript:void();" class="cart-popup__link">Заполнить самостоятельно</a></p>
         </div>
       </div>
-      <div class="decor-popup">
+      <div class="decor-popup popup">
         <h2 class="decor-popup__title">Оформление заказа</h2>
         <form action="/" class="decor-popup__form">
           <label class="decor-popup__label">Ваше имя и фамилия*
@@ -323,21 +319,15 @@
           <button type="submit" class="button button_green decor-popup__button">Отправить заказ</button>
         </form>
       </div>
-      <div class="product-popup">
+      <div class="product-popup popup">
         <h2 class="product-popup__title">Матрас Virtuoz Респект</h2>
         <div class="product-carousel product-popup__carousel">
           <div class="product-carousel__items"><img src="img/slide1.jpg" alt=""><img src="img/slide2.jpg" alt=""><img src="img/slide3.jpg" alt=""><img src="img/slide4.jpg" alt=""></div>
-          <div class="product-carousel__navigation">
-            <div class="product-carousel__prev"><i class="icon icon_prev"></i></div>
-            <div class="product-carousel__next"><i class="icon icon_next"></i></div>
-          </div>
+          <div class="product-carousel__navigation"><i class="icon icon_prev product-carousel__prev"></i><i class="icon icon_next product-carousel__next"></i></div>
         </div>
         <div class="product-popup-form product-popup__form">
           <div class="product-popup-form__block">
-            <div class="product-popup-form__part product-popup-form__part_left">
-              <div class="product-popup-form__newprice">7 500<i class="rubl"></i></div>
-              <div class="product-popup-form__oldprice">10 500<i class="rubl"></i></div>
-            </div>
+            <div class="product-popup-form__part product-popup-form__part_left"><span class="product-popup-form__newprice">7 500<i class="currency currency_big"></i></span><span class="product-popup-form__oldprice">10 500<i class="currency currency_small"></i></span></div>
             <div class="product-popup-form__part product-popup-form__part_right">
               <div class="product-popup-form__availability"><i class="icon icon_ok"></i>В наличие</div>
             </div>
@@ -345,13 +335,12 @@
           <div class="hr product-popup-form__hr"></div>
           <div class="product-popup-form__block">
             <div class="product-popup-form__part product-popup-form__part_left">
-              <label class="product-popup-form__label">Выберете размер
-                <select class="product-popup__select">
-                  <option value="1">Любой</option>
-                  <option value="1">Другой</option>
-                  <option value="1">Всякий</option>
-                </select>
-              </label>
+              <label for="size" class="product-popup-form__label">Выберете размер</label>
+              <select name="size" id="size" class="product-popup__select">
+                <option value="1">Любой</option>
+                <option value="1">Другой</option>
+                <option value="1">Всякий</option>
+              </select>
             </div>
             <div class="product-popup-form__part product-popup-form__part_right">
               <p class="product-popup-form__question">Нужен другой размер?</p>
@@ -367,6 +356,65 @@
               <button class="button button_green product-popup-form__button">Купить в 1 клик</button>
             </div>
           </div><a href="#" class="product-popup-form__link">Информация о доставке</a>
+        </div>
+      </div>
+      <div class="filter-popup popup">
+        <h2 class="filter__titile filter-popup__title">Фильтр по параметрам</h2>
+        <form action="/" class="filter__form">
+          <div class="filter__input-group">
+            <label for="type" class="filter__label">Тип</label>
+            <select name="type" id="type" class="filter__control filter__control_select wide">
+              <option value="1">Любой</option>
+              <option value="2">Не любой</option>
+              <option value="3">Конкретный</option>
+              <option value="4">Всякий</option>
+            </select>
+          </div>
+          <div class="filter__input-group">
+            <label for="brend" class="filter__label">Бренд</label>
+            <select name="brend" id="brend" class="filter__control filter__control_select wide">
+              <option value="1">Все</option>
+              <option value="2">Не любой</option>
+              <option value="3">Конкретный</option>
+              <option value="4">Всякий</option>
+            </select>
+          </div>
+          <div class="filter__input-group">
+            <label class="filter__label">Цена в рублях</label>
+            <div class="filter__control_double">
+              <input type="number" name="pricefrom" placeholder="от" class="filter__control filter__control_input filter__control_first"><span class="filter__glue_input"></span>
+              <input type="number" name="priceto" placeholder="до" class="filter__control filter__control_input filter__control_last">
+            </div>
+          </div>
+          <div class="filter__input-group">
+            <label class="filter__label">Размер в см</label>
+            <div class="filter__control_double">
+              <input type="number" name="width" placeholder="Ширина" class="filter__control filter__control_input filter__control_first"><span class="filter__glue_input"></span>
+              <input type="number" name="height" placeholder="Высота" class="filter__control filter__control_input filter__control_last">
+            </div>
+          </div>
+          <div class="filter__input-group">
+            <label for="first-side" class="filter__label">Жесткость 1-ой стороны</label>
+            <select name="first-side" id="first-side" class="filter__control filter__control_select wide">
+              <option value="1">Любой</option>
+              <option value="2">Не любой</option>
+              <option value="3">Конкретный</option>
+              <option value="4">Всякий</option>
+            </select>
+          </div>
+          <div class="filter__input-group">
+            <label for="last-side" class="filter__label">Жесткость 2-ой стороны</label>
+            <select name="last-side" id="last-side" class="filter__control filter__control_select wide">
+              <option value="1">Все</option>
+              <option value="2">Не любой</option>
+              <option value="3">Конкретный</option>
+              <option value="4">Всякий</option>
+            </select>
+          </div>
+        </form>
+        <div class="filter__footer">
+          <button type="submit" class="button button_green filter__button">Подобрать</button>
+          <p class="filter__text"><a href="#" class="filter__link">Наш менеджер может помочь вам</a> с любым дополнительным параметром</p>
         </div>
       </div>
     </div><!--[if lt IE 9]>
