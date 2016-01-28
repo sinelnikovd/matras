@@ -1,0 +1,49 @@
+extends ./template/template.jade
+
+block title
+	title Нестандартные изделия
+
+block style
+	link(rel="stylesheet" href="_no-standart-order.min.css")
+
+block content
+	include ./template/header.jade
+	include ./template/section-call-top.jade
+	.container
+		.content
+			h2.content__title Нестандартные изделия: <br> изготовление на заказ
+			p.content__text На заказ мы можем изготовить матрас или наматрасник любого размера с шагом в 1 см. Для заказа нестандартного изделия выберите модель и укажите точные необходимые размеры.
+
+
+			p.content__text Уникальное предложение: мы изготавливаем матрасы нестандартных размеров без предоплаты. <br>Срок изготовления обычно составляет один рабочий день.
+
+			p.content__text Матрасы и наматрасники нестандартной формы и наполнения, как правило, изготавливаются по предоплате. Под нестандартной формой понимаются любые непрямоугольные варианты: трапеция, матрас со скошенным углом, полукруглый матрас и т.д. Для заказа нестандартной формы необходимо прислать чертеж будущего изделия на почту zakaz@matras.ru или через форму заказа. Срок изготовления обычно составляет один рабочий день с момента получения оплаты. Изготовление нестандартной формы невозможно на пружинном блоке "Боннель".
+
+
+			p.content__text Нестандартные ортопедические основания (решетки) изготавливаются с шагом в 5 см и только по 100%-ой предоплате. Срок изготовления составляет 5-10 рабочих дней с момента получения оплаты.
+
+
+			p.content__text.content__text_margin_bottom Стандартный матрас имеет форму прямоугольника. Стандартной шириной считаются следующие значения: 80, 90, 120, 140, 160, 180 и 200 см. Стандартной длиной — 190, 195 и 200 см.
+
+	.no-standart-order
+		.container
+			form(action="/").no-standart-order__form
+				label.no-standart-order__label Ваше имя
+					input(type="text" name="name").no-standart-order__input
+				label.no-standart-order__label Телефон или электронная почта
+					input(type="text" name="phone").no-standart-order__input
+				label.no-standart-order__label Сообщение
+					textarea(name="message", rows="7").no-standart-order__textarea
+				label.no-standart-order__label Загрузите чертеж (если необходимо)
+					.file-upload.no-standart-order__file-upload
+						button(type="button").file-upload__button Выбрать файл
+						span.file-upload__text Файл не выбран
+						input(type="file").file-upload__file
+				.hr.hr_brown
+				button(type="submit").button.button_red.no-standart-order__button Отправить заказ
+
+
+	include ./template/section-call-bottom.jade
+	include ./template/footer.jade
+	include ./template/social.jade
+	include ./template/cart.jade

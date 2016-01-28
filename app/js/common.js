@@ -60,8 +60,22 @@ $(document).ready(function() {
 		});
 	});
 
+	var icons = {
+		headerSelected: "accordion__icon icon_z",
+		header: "accordion__icon icon_y"
+	};
 
+	$( ".accordion" ).accordion({collapsible:true,heightStyle:"content"});
+	$( ".accordion" ).accordion( "option", "icons", null );
 
+	$( ".accordion" ).on( "accordionbeforeactivate", function( event, ui ) {
+		ui.newHeader.find(".accordion__text").text("Свернуть")
+		ui.newHeader.find(".icon").removeClass("icon_down")
+		ui.newHeader.find(".icon").addClass("icon_up")
+		ui.oldHeader.find(".accordion__text").text("Раскрыть")
+		ui.oldHeader.find(".icon").removeClass("icon_up")
+		ui.oldHeader.find(".icon").addClass("icon_down")
+	});
 
 
 });
