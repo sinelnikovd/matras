@@ -10,6 +10,7 @@ block content
 	include ./template/header.jade
 	include ./template/section-call-top.jade
 
+	// BEGIN MAIN-CATALOG 
 	.section-main-catalog
 		.container
 			.catalog-miniature-row
@@ -51,7 +52,9 @@ block content
 					a(href="#").section-main-catalog-andto__link одеяла;
 					| 
 					a(href="#").section-main-catalog-andto__link шкафы, комоды, тумбы
+	// END MAIN-CATALOG 
 
+	// BEGIN FILTER 
 	.filter
 			.container
 				h2.filter__titile Фильтр по параметрам
@@ -77,7 +80,7 @@ block content
 						.filter__control_double
 							input(type="number" name="pricefrom" placeholder="от").filter__control.filter__control_input.filter__control_first
 							span.filter__glue_input
-							input(type="number" name="priceto" placeholder="до").filter__control.filter__control_input.filter__control_last
+							input(type="number" name="priceto" placeholder="до").filter__control.filter__control_input.filter__control_last.control__error
 					.filter__input-group
 						label.filter__label Размер в см
 						.filter__control_double
@@ -104,8 +107,9 @@ block content
 					p.filter__text
 						a(href="#").filter__link Наш менеджер может помочь вам
 						|  с любым дополнительным параметром
+	// END FILTER 
 
-
+	// BEGIN HITS 
 	.section-hits
 		.container
 			h2.section-hits__title Хиты продаж
@@ -117,7 +121,9 @@ block content
 				include ./template/product-card.jade
 				include ./template/product-card.jade
 			a(href="#").section-hits__link Смотреть все
+	// END HITS 
 
+	// BEGIN POPULAR SIZE 
 	.section-popular-size
 		.container
 			h2.section-popular-size__title Популярные размеры матрасов
@@ -131,6 +137,9 @@ block content
 				li.popular-size__item.popular-size__item_last
 					a(href="#").popular-size__link 160x145
 			a(href="#").section-popular-size__link Открыть все
+		// END POPULAR SIZE 
+
+	// BEGIN MAIN ABOUT 
 	.section-main-about
 		.container
 			h2.section-main-about__title О нас
@@ -154,6 +163,7 @@ block content
 					span.about-item__number 6
 					p.about-item__text Фирменная гарантия на всю продукцию
 			a(href="#").section-main-about__link Узнать больше
+	// END MAIN ABOUT 
 
 	include ./template/section-call-bottom.jade
 
@@ -161,147 +171,22 @@ block content
 
 	include ./template/social.jade
 
-	.banner
-		.container
-			i.icon.icon_close.banner__close
-
-			a(href="#").banner__link
-				img(src="img/banners.jpg", alt="").banner__picture
-				span.banner__text Суперакция: матрасы Promtex Orient со скидкой до 45%
+	include ./template/banner.jade
 
 	include ./template/cart.jade
 
 
 block popup
-	.cart-popup.popup
-		h2.cart-popup__title Корзина
-		p.cart-popup__description В случае, если у Вас появились какие то проблемы 
-			a(href="tel:+74953572984").cart-popup__calllink +7(495) 357-29-84
-		include ./template/cart-item.jade
-		include ./template/cart-item.jade
-		.cart-popup__footer
-			.cart-total
-				span.cart-total__title Итого:
-				ul.cart-total__price
-					li.cart-total__oldprice 48 996 руб.
-					li.cart-total__newprice 39 992 руб.
-			form(action="/").cart-form.cart-popup__form
-				i.icon.icon_phone.cart-form__icon
-				input(type="text" placeholder="Введите телефон").cart-form__input.data-inputmask
-				button(type="submit").button.button_green.cart-form__button Оформить заказ
-			p.cart-popup__text
-				a(href="javascript:void();").cart-popup__link Заполнить самостоятельно
+	include ./template/cart-popup.jade
 
+	include ./template/order-popup.jade
 
-	.decor-popup.popup
-		h2.decor-popup__title Оформление заказа
-		form(action="/").decor-popup__form
-			label.decor-popup__label Ваше имя и фамилия*
-				input(type="text").decor-popup__input
-			p.decor-popup__clarification Необходимы для заполнения гарантии
-			label.decor-popup__label Телефон*
-				input(type="text").decor-popup__input
-			p.decor-popup__clarification Желательно указать несколько телефонов
-			label.decor-popup__label Адрес доставки*
-				textarea(name="", rows="4").decor-popup__textarea
-			p.decor-popup__optional Необязательные поля
-			label.decor-popup__label.decor-popup__label_margin_bottom E-mail
-				input(type="text").decor-popup__input
-			label.decor-popup__label Примечания
-				textarea(name="", rows="4").decor-popup__textarea
-			button(type="submit").button.button_green.decor-popup__button Отправить заказ
+	include ./template/product-popup.jade
 
-	.product-popup.popup
-		h2.product-popup__title Матрас Virtuoz Респект
-		.product-carousel.product-popup__carousel
-			.product-carousel__items
-				img(src="img/slide1.jpg", alt="")
-				img(src="img/slide2.jpg", alt="")
-				img(src="img/slide3.jpg", alt="")
-				img(src="img/slide4.jpg", alt="")
-			.product-carousel__navigation
-				i.icon.icon_prev.product-carousel__prev
-				i.icon.icon_next.product-carousel__next
-		.product-popup-form.product-popup__form
-			.product-popup-form__block
-				.product-popup-form__part.product-popup-form__part_left
-					span.product-popup-form__newprice 7 500
-						i.currency.currency_big
-					span.product-popup-form__oldprice 10 500
-						i.currency.currency_small
-				.product-popup-form__part.product-popup-form__part_right
-					.product-popup-form__availability
-						i.icon.icon_ok
-						| В наличие
-			.hr.product-popup-form__hr
-			.product-popup-form__block
-				.product-popup-form__part.product-popup-form__part_left
-					label(for="size").product-popup-form__label Выберете размер
-					select(name="size")#size.product-popup__select
-						option(value="1") Любой
-						option(value="1") Другой
-						option(value="1") Всякий
-				.product-popup-form__part.product-popup-form__part_right
-					p.product-popup-form__question Нужен другой размер?
-					button.button.product-popup-form__button.product-popup-form__button_call Позвонить
-			.hr.product-popup-form__hr
-			.product-popup-form__block
-				.product-popup-form__part.product-popup-form__part_left
-					button.button.button_red.product-popup-form__button Добавить в корзину
-				.product-popup-form__part.product-popup-form__part_right
-					button.button.button_green.product-popup-form__button Купить в 1 клик
-			a(href="#").product-popup-form__link Информация о доставке
+	include ./template/filter-popup.jade
 
 
 
-	.filter-popup.popup
-		h2.filter__titile.filter-popup__title Фильтр по параметрам
-		form(action="/").filter__form
-			.filter__input-group
-				label(for="type").filter__label Тип
-				select(name="type")#type.filter__control.filter__control_select.wide
-					option(value="1") Любой
-					option(value="2") Не любой
-					option(value="3") Конкретный
-					option(value="4") Всякий
-			.filter__input-group
-				label(for="brend").filter__label Бренд
-				select(name="brend")#brend.filter__control.filter__control_select.wide
-					option(value="1") Все
-					option(value="2") Не любой
-					option(value="3") Конкретный
-					option(value="4") Всякий
-			.filter__input-group
-				label.filter__label Цена в рублях
-				.filter__control_double
-					input(type="number" name="pricefrom" placeholder="от").filter__control.filter__control_input.filter__control_first
-					span.filter__glue_input
-					input(type="number" name="priceto" placeholder="до").filter__control.filter__control_input.filter__control_last
-			.filter__input-group
-				label.filter__label Размер в см
-				.filter__control_double
-					input(type="number" name="width" placeholder="Ширина").filter__control.filter__control_input.filter__control_first
-					span.filter__glue_input
-					input(type="number" name="height" placeholder="Высота").filter__control.filter__control_input.filter__control_last
-			.filter__input-group
-				label(for="first-side").filter__label Жесткость 1-ой стороны
-				select(name="first-side")#first-side.filter__control.filter__control_select.wide
-					option(value="1") Любой
-					option(value="2") Не любой
-					option(value="3") Конкретный
-					option(value="4") Всякий
-			.filter__input-group
-				label(for="last-side").filter__label Жесткость 2-ой стороны
-				select(name="last-side")#last-side.filter__control.filter__control_select.wide
-					option(value="1") Все
-					option(value="2") Не любой
-					option(value="3") Конкретный
-					option(value="4") Всякий
-		.filter__footer
-			button(type="submit").button.button_green.filter__button Подобрать
-			p.filter__text
-				a(href="#").filter__link Наш менеджер может помочь вам
-				|  с любым дополнительным параметром
 
 
 

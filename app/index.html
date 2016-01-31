@@ -15,14 +15,15 @@
     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
   </head>
   <body>
+    <!-- BEGIN HEADER -->
     <div class="header">
       <div class="container">
         <div class="navigation-bar hader__navigation-bar">
           <div class="logo header__logo"><a href="/" class="logo__link"><img src="img/logo.png" alt="" class="logo__image"></a></div>
           <ul class="header-button header__button">
             <li class="header-button__item"><a href="tel:888800000" class="header-button__link"><i class="icon icon_call header-button__icon"></i></a></li>
-            <li class="header-button__item"><a href="javascript:void();" class="header-button__link header-button__link_filter"><i class="icon icon_fillter header-button__icon"></i><span class="header-button__text">Фильтр</span></a></li>
-            <li class="header-button__item"><a href="javascript:void();" class="header-button__link header-button__link_menu"><i class="icon icon_menu header-button__icon"></i><span class="header-button__text">Каталог</span></a></li>
+            <li class="header-button__item"><a href="javascript:;" class="header-button__link header-button__link_filter"><i class="icon icon_fillter header-button__icon"></i><span class="header-button__text">Фильтр</span></a></li>
+            <li class="header-button__item"><a href="javascript:;" class="header-button__link header-button__link_menu"><i class="icon icon_menu header-button__icon"></i><span class="header-button__text">Каталог</span></a></li>
           </ul>
         </div>
         <div class="navigation header__navigation">
@@ -46,16 +47,20 @@
         </div>
       </div>
     </div>
+    <!-- END HEADER -->
+    <!-- BEGIN CALL TOP -->
     <div class="section-call-top">
       <div class="container">
         <p class="section-call-top__title">Подберем Вам матрас, прямо сейчас <br><strong>с учетом всех ваших пожеланий</strong></p>
         <form class="call section-call-top__call"><i class="icon icon_phone call__icon"></i>
           <input type="text" placeholder="Введите телефон" class="call__text data-inputmask">
-          <button type="submit" class="call__button">Жду звонка</button>
+          <button type="submit" class="button call__button">Жду звонка</button>
         </form>
         <p class="section-call-top__subtitle">Перезвоним за одну минуту</p>
       </div>
     </div>
+    <!-- END CALL TOP -->
+    <!-- BEGIN MAIN-CATALOG -->
     <div class="section-main-catalog">
       <div class="container">
         <div class="catalog-miniature-row">
@@ -83,6 +88,8 @@
         </div>
       </div>
     </div>
+    <!-- END MAIN-CATALOG -->
+    <!-- BEGIN FILTER -->
     <div class="filter">
       <div class="container">
         <h2 class="filter__titile">Фильтр по параметрам</h2><span class="filter__subtitle">так же доступен в шапке сайта</span>
@@ -111,7 +118,7 @@
             <label class="filter__label">Цена в рублях</label>
             <div class="filter__control_double">
               <input type="number" name="pricefrom" placeholder="от" class="filter__control filter__control_input filter__control_first"><span class="filter__glue_input"></span>
-              <input type="number" name="priceto" placeholder="до" class="filter__control filter__control_input filter__control_last">
+              <input type="number" name="priceto" placeholder="до" class="filter__control filter__control_input filter__control_last control__error">
             </div>
           </div>
           <div class="filter__input-group">
@@ -148,31 +155,47 @@
         </div>
       </div>
     </div>
+    <!-- END FILTER -->
+    <!-- BEGIN HITS -->
     <div class="section-hits">
       <div class="container">
         <h2 class="section-hits__title">Хиты продаж</h2>
         <div class="product-cards section-hits__product-cards">
-          <div class="product-card product-card_double"><a href="javascript:void();" class="product-card__link"><span class="product-card__sale">-25%</span><img src="img/hit_matras-Promtex-Orient-Soft-Temple.jpg" alt="" class="product-card__preview">
+          <!-- BEGIN PRODUCT CARD -->
+          <div class="product-card product-card_double"><a href="javascript:;" class="product-card__link"><span class="product-card__sale">-25%</span><img src="img/hit_matras-Promtex-Orient-Soft-Temple.jpg" alt="" class="product-card__preview">
               <h5 class="product-card__title">Eco Hard 1 TFK</h5>
               <p class="product-card__price">от 7 996 руб. </p></a></div>
-          <div class="product-card product-card_double"><a href="javascript:void();" class="product-card__link"><span class="product-card__sale">-25%</span><img src="img/hit_matras-Promtex-Orient-Soft-Temple.jpg" alt="" class="product-card__preview">
+          <!-- END PRODUCT CARD -->
+          <!-- BEGIN PRODUCT CARD -->
+          <div class="product-card product-card_double"><a href="javascript:;" class="product-card__link"><span class="product-card__sale">-25%</span><img src="img/hit_matras-Promtex-Orient-Soft-Temple.jpg" alt="" class="product-card__preview">
               <h5 class="product-card__title">Eco Hard 1 TFK</h5>
               <p class="product-card__price">от 7 996 руб. </p></a></div>
-          <div class="product-card product-card_double"><a href="javascript:void();" class="product-card__link"><span class="product-card__sale">-25%</span><img src="img/hit_matras-Promtex-Orient-Soft-Temple.jpg" alt="" class="product-card__preview">
+          <!-- END PRODUCT CARD -->
+          <!-- BEGIN PRODUCT CARD -->
+          <div class="product-card product-card_double"><a href="javascript:;" class="product-card__link"><span class="product-card__sale">-25%</span><img src="img/hit_matras-Promtex-Orient-Soft-Temple.jpg" alt="" class="product-card__preview">
               <h5 class="product-card__title">Eco Hard 1 TFK</h5>
               <p class="product-card__price">от 7 996 руб. </p></a></div>
-          <div class="product-card product-card_double"><a href="javascript:void();" class="product-card__link"><span class="product-card__sale">-25%</span><img src="img/hit_matras-Promtex-Orient-Soft-Temple.jpg" alt="" class="product-card__preview">
+          <!-- END PRODUCT CARD -->
+          <!-- BEGIN PRODUCT CARD -->
+          <div class="product-card product-card_double"><a href="javascript:;" class="product-card__link"><span class="product-card__sale">-25%</span><img src="img/hit_matras-Promtex-Orient-Soft-Temple.jpg" alt="" class="product-card__preview">
               <h5 class="product-card__title">Eco Hard 1 TFK</h5>
               <p class="product-card__price">от 7 996 руб. </p></a></div>
-          <div class="product-card product-card_double"><a href="javascript:void();" class="product-card__link"><span class="product-card__sale">-25%</span><img src="img/hit_matras-Promtex-Orient-Soft-Temple.jpg" alt="" class="product-card__preview">
+          <!-- END PRODUCT CARD -->
+          <!-- BEGIN PRODUCT CARD -->
+          <div class="product-card product-card_double"><a href="javascript:;" class="product-card__link"><span class="product-card__sale">-25%</span><img src="img/hit_matras-Promtex-Orient-Soft-Temple.jpg" alt="" class="product-card__preview">
               <h5 class="product-card__title">Eco Hard 1 TFK</h5>
               <p class="product-card__price">от 7 996 руб. </p></a></div>
-          <div class="product-card product-card_double"><a href="javascript:void();" class="product-card__link"><span class="product-card__sale">-25%</span><img src="img/hit_matras-Promtex-Orient-Soft-Temple.jpg" alt="" class="product-card__preview">
+          <!-- END PRODUCT CARD -->
+          <!-- BEGIN PRODUCT CARD -->
+          <div class="product-card product-card_double"><a href="javascript:;" class="product-card__link"><span class="product-card__sale">-25%</span><img src="img/hit_matras-Promtex-Orient-Soft-Temple.jpg" alt="" class="product-card__preview">
               <h5 class="product-card__title">Eco Hard 1 TFK</h5>
               <p class="product-card__price">от 7 996 руб. </p></a></div>
+          <!-- END PRODUCT CARD -->
         </div><a href="#" class="section-hits__link">Смотреть все</a>
       </div>
     </div>
+    <!-- END HITS -->
+    <!-- BEGIN POPULAR SIZE -->
     <div class="section-popular-size">
       <div class="container">
         <h2 class="section-popular-size__title">Популярные размеры матрасов</h2>
@@ -183,7 +206,9 @@
           <li class="popular-size__item popular-size__item_last"><a href="#" class="popular-size__link">160x145</a></li>
         </ul><a href="#" class="section-popular-size__link">Открыть все</a>
       </div>
+      <!-- END POPULAR SIZE -->
     </div>
+    <!-- BEGIN MAIN ABOUT -->
     <div class="section-main-about">
       <div class="container">
         <h2 class="section-main-about__title">О нас</h2>
@@ -209,15 +234,19 @@
         </div><a href="#" class="section-main-about__link">Узнать больше</a>
       </div>
     </div>
+    <!-- END MAIN ABOUT -->
+    <!-- BEGIN CALL BOTTOM -->
     <div class="section-call-bottom">
       <div class="container">
         <p class="section-call-bottom__title">Подберем Вам матрас, прямо сейчас <br><strong>с учетом всех ваших пожеланий</strong></p>
         <form class="call section-call-bottom__call"><i class="icon icon_phone call__icon"></i>
           <input type="text" placeholder="Введите телефон" class="call__text data-inputmask">
-          <button type="submit" class="call__button section-call-bottom__button">Жду звонка</button>
+          <button type="submit" class="button call__button section-call-bottom__button">Жду звонка</button>
         </form>
       </div>
     </div>
+    <!-- END CALL BOTTOM -->
+    <!-- BEGIN FOOTER -->
     <footer>
       <div class="container">
         <div class="footer__navigation">
@@ -248,6 +277,8 @@
       <div class="hr"></div>
       <div class="container"><a href="http://www.matras.ru/" class="fulllink footer__fulllink"><i class="icon icon_full fulllink__icon"></i><span class="fulllink__text">Полная версия сайта</span></a></div>
     </footer>
+    <!-- END FOOTER -->
+    <!-- BEGIN SOCIAL -->
     <div class="section-social">
       <div class="container">
         <ul class="social">
@@ -257,14 +288,21 @@
         </ul>
       </div>
     </div>
+    <!-- END SOCIAL -->
+    <!-- BEGIN BANNER -->
     <div class="banner">
       <div class="container"><i class="icon icon_close banner__close"></i><a href="#" class="banner__link"><img src="img/banners.jpg" alt="" class="banner__picture"><span class="banner__text">Суперакция: матрасы Promtex Orient со скидкой до 45%</span></a></div>
     </div>
+    <!-- END BANNER -->
+    <!-- BEGIN CART -->
     <div class="cart"><i class="icon icon_cart cart__icon"></i><span class="cart__count">2</span></div>
+    <!-- END CART -->
     <div class="hidden">
+      <!-- BEGIN CART-POPUP -->
       <div class="cart-popup popup">
         <h2 class="cart-popup__title">Корзина</h2>
         <p class="cart-popup__description">В случае, если у Вас появились какие то проблемы <a href="tel:+74953572984" class="cart-popup__calllink">+7(495) 357-29-84</a></p>
+        <!-- BEGIN CART-ITEM -->
         <div class="cart-item">
           <div class="cart-item__preview"><img src="img/hit_matras-Promtex-Orient-Soft-Temple.jpg" alt="" class="cart-item__picture"></div>
           <div class="cart-item__description"><a href="#" class="cart-item__link">Eco hard 1 TFK</a><span class="cart-item__price">5996 руб.</span><span class="cart-item__point"><i class="icon icon_point">.</i></span><span class="cart-item__size">60x160</span>
@@ -273,6 +311,8 @@
             </div>
           </div>
         </div>
+        <!-- END CART-ITEM -->
+        <!-- BEGIN CART-ITEM -->
         <div class="cart-item">
           <div class="cart-item__preview"><img src="img/hit_matras-Promtex-Orient-Soft-Temple.jpg" alt="" class="cart-item__picture"></div>
           <div class="cart-item__description"><a href="#" class="cart-item__link">Eco hard 1 TFK</a><span class="cart-item__price">5996 руб.</span><span class="cart-item__point"><i class="icon icon_point">.</i></span><span class="cart-item__size">60x160</span>
@@ -281,6 +321,7 @@
             </div>
           </div>
         </div>
+        <!-- END CART-ITEM -->
         <div class="cart-popup__footer">
           <div class="cart-total"><span class="cart-total__title">Итого:</span>
             <ul class="cart-total__price">
@@ -292,78 +333,138 @@
             <input type="text" placeholder="Введите телефон" class="cart-form__input data-inputmask">
             <button type="submit" class="button button_green cart-form__button">Оформить заказ</button>
           </form>
-          <p class="cart-popup__text"><a href="javascript:void();" class="cart-popup__link">Заполнить самостоятельно</a></p>
+          <p class="cart-popup__text"><a href="javascript:;" class="cart-popup__link">Заполнить самостоятельно</a></p>
         </div>
       </div>
-      <div class="decor-popup popup">
-        <h2 class="decor-popup__title">Оформление заказа</h2>
-        <form action="/" class="decor-popup__form">
-          <label class="decor-popup__label">Ваше имя и фамилия*
-            <input type="text" class="decor-popup__input">
+      <!-- END CART-POPUP -->
+      <!-- BEGIN ORDER POPUP -->
+      <div class="order-popup popup">
+        <h2 class="order-popup__title">Оформление заказа</h2>
+        <form action="/" class="order-popup__form">
+          <label class="order-popup__label">Ваше имя и фамилия*
+            <input type="text" class="order-popup__input">
           </label>
-          <p class="decor-popup__clarification">Необходимы для заполнения гарантии</p>
-          <label class="decor-popup__label">Телефон*
-            <input type="text" class="decor-popup__input">
+          <p class="order-popup__clarification">Необходимы для заполнения гарантии</p>
+          <label class="order-popup__label">Телефон*
+            <input type="text" class="order-popup__input">
           </label>
-          <p class="decor-popup__clarification">Желательно указать несколько телефонов</p>
-          <label class="decor-popup__label">Адрес доставки*
-            <textarea name="" rows="4" class="decor-popup__textarea"></textarea>
+          <p class="order-popup__clarification">Желательно указать несколько телефонов</p>
+          <label class="order-popup__label">Адрес доставки*
+            <textarea name="addres" rows="4" class="order-popup__textarea"></textarea>
           </label>
-          <p class="decor-popup__optional">Необязательные поля</p>
-          <label class="decor-popup__label decor-popup__label_margin_bottom">E-mail
-            <input type="text" class="decor-popup__input">
+          <p class="order-popup__optional">Необязательные поля</p>
+          <label class="order-popup__label order-popup__label_margin_bottom">E-mail
+            <input type="text" class="order-popup__input">
           </label>
-          <label class="decor-popup__label">Примечания
-            <textarea name="" rows="4" class="decor-popup__textarea"></textarea>
+          <label class="order-popup__label">Примечания
+            <textarea name="notes" rows="4" class="order-popup__textarea"></textarea>
           </label>
-          <button type="submit" class="button button_green decor-popup__button">Отправить заказ</button>
+          <button type="submit" class="button button_green order-popup__button">Отправить заказ</button>
         </form>
       </div>
+      <!-- END ORDER POPUP -->
+      <!-- BEGIN PRODUCT-POPUP -->
       <div class="product-popup popup">
         <h2 class="product-popup__title">Матрас Virtuoz Респект</h2>
         <div class="product-carousel product-popup__carousel">
-          <div class="product-carousel__items"><img src="img/slide1.jpg" alt=""><img src="img/slide2.jpg" alt=""><img src="img/slide3.jpg" alt=""><img src="img/slide4.jpg" alt=""></div>
-          <div class="product-carousel__navigation"><i class="icon icon_prev product-carousel__prev"></i><i class="icon icon_next product-carousel__next"></i></div>
+          <div class="product-carousel__items">
+            <div class="product-carousel__item"><img src="img/slide1.jpg" alt="" class="product-carousel__image"></div>
+            <div class="product-carousel__item"><img src="img/slide2.jpg" alt="" class="product-carousel__image"></div>
+            <div class="product-carousel__item"><img src="img/slide3.jpg" alt="" class="product-carousel__image"></div>
+            <div class="product-carousel__item"><img src="img/slide4.jpg" alt="" class="product-carousel__image"></div>
+          </div>
         </div>
+        <div class="product-carousel__navigation"><i class="icon icon_prev product-carousel__prev"></i><i class="icon icon_next product-carousel__next"></i></div>
         <div class="product-popup-form product-popup__form">
-          <div class="product-popup-form__block">
+          <div class="product-popup-form__block product-popup-form__block_first">
             <div class="product-popup-form__part product-popup-form__part_left"><span class="product-popup-form__newprice">7 500<i class="currency currency_big"></i></span><span class="product-popup-form__oldprice">10 500<i class="currency currency_small"></i></span></div>
             <div class="product-popup-form__part product-popup-form__part_right">
-              <div class="product-popup-form__availability"><i class="icon icon_ok"></i>В наличие</div>
+              <div class="product-popup-form__availability"><i class="icon icon_ok product-popup-form__icon_ok"></i>В наличие</div>
             </div>
           </div>
-          <div class="hr product-popup-form__hr"></div>
-          <div class="product-popup-form__block">
+          <div class="hr hr_brown"></div>
+          <div class="product-popup-form__block product-popup-form__block_middle">
             <div class="product-popup-form__part product-popup-form__part_left">
               <label for="size" class="product-popup-form__label">Выберете размер</label>
-              <select name="size" id="size" class="product-popup__select">
+              <select name="size" id="size" class="product-popup__select wide">
                 <option value="1">Любой</option>
                 <option value="1">Другой</option>
                 <option value="1">Всякий</option>
               </select>
             </div>
-            <div class="product-popup-form__part product-popup-form__part_right">
-              <p class="product-popup-form__question">Нужен другой размер?</p>
-              <button class="button product-popup-form__button product-popup-form__button_call">Позвонить</button>
+            <div class="product-popup-form__part product-popup-form__part_right"><span class="product-popup-form__question">Нужен другой размер?</span>
+              <button class="button button_border_red product-popup-form__button product-popup-form__button_call">Позвонить</button>
             </div>
           </div>
-          <div class="hr product-popup-form__hr"></div>
-          <div class="product-popup-form__block">
+          <div class="hr hr_brown"></div>
+          <div class="product-popup-form__block product-popup-form__block_last">
             <div class="product-popup-form__part product-popup-form__part_left">
-              <button class="button button_red product-popup-form__button">Добавить в корзину</button>
+              <button class="button button_red product-popup-form__button product-popup-form__button_add">Добавить в корзину</button>
             </div>
             <div class="product-popup-form__part product-popup-form__part_right">
-              <button class="button button_green product-popup-form__button">Купить в 1 клик</button>
-            </div>
-          </div><a href="#" class="product-popup-form__link">Информация о доставке</a>
+              <button class="button button_green product-popup-form__button product-popup-form__button_click">Купить в 1 клик</button>
+            </div><a href="#" class="product-popup-form__link">Информация о доставке</a>
+          </div>
+        </div>
+        <div class="product-popup__miniatures">
+          <div class="product-miniature product-popup__miniature"><img src="img/rigidity.png" alt="" class="product-miniature__image"><span class="product-miniature__value">cредняя</span><span class="product-miniature__title">Жесткость</span></div>
+          <div class="product-miniature product-popup__miniature"><img src="img/height.png" alt="" class="product-miniature__image"><span class="product-miniature__value">19 см</span><span class="product-miniature__title">Высота матраса</span></div>
+          <div class="product-miniature product-popup__miniature"><img src="img/weight.png" alt="" class="product-miniature__image"><span class="product-miniature__value">90 кг</span><span class="product-miniature__title">Макс. мест. на одно спальное место</span></div>
+        </div>
+        <div class="hr hr_gray"></div>
+        <div class="content product-popup__content">
+          <h3 class="product-popup__content-title">Состав</h3>
+          <div class="product-composition product-popup__composition">
+            <p class="product-composition__line">&#8211; <span class="product-composition__text">Чехол хлопковых жаккард</span></p>
+            <p class="product-composition__line">&#8211; <span class="product-composition__text">Искусственный латекс (2см)</span></p>
+            <p class="product-composition__line">&#8211; <span class="product-composition__text">Термовойлок</span></p>
+            <p class="product-composition__line product-composition__line_margin_top_bottom">&#8211; <span class="product-composition__text">Независимые пружины TFK</span></p>
+            <p class="product-composition__line">&#8211; <span class="product-composition__text">Термовойлок</span></p>
+            <p class="product-composition__line">&#8211; <span class="product-composition__text">Искусственный латекс (2см)</span></p>
+            <p class="product-composition__line">&#8211; <span class="product-composition__text">Независимые пружины TFK</span></p>
+          </div>
+        </div>
+        <div class="hr hr_gray"></div>
+        <div class="content product-popup__content">
+          <h3 class="product-popup__content-title">Описание</h3>
+          <div class="product-popup__dropdown-text">
+            <p class="content__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Возвращайся раз взгляд родного, своего заголовок коварных океана подпоясал лучше инициал деревни алфавит это составитель безорфографичный выйти образ мир все, агенство рыбного необходимыми рукописи переписывается собрал себя. Знаках алфавит моей журчит о, на берегу жизни жаренные безопасную, толку свою которое, напоивший! Взгляд, продолжил, себя инициал грустный диких ему, даль рекламных свое великий о города большой путь lorem языком оксмокс гор там журчит, до мир выйти вскоре предложения последний. Пунктуация себя единственное прямо заглавных осталось, необходимыми, запятых всеми рот своих первую взобравшись коварный ведущими океана. Не своих которое рот правилами путь! Однажды.<span class="product-popup__dropdown-before"></span></p><a href="javascript:;" class="product-popup__dropdown">Читать всё</a>
+          </div>
+        </div>
+        <div class="hr hr_gray"></div>
+        <div class="content product-popup__content">
+          <h3 class="product-popup__content-title">Характеристики</h3>
+          <div class="product-characteristics"><span class="product-characteristics__name">Тип матраса:</span><span class="product-characteristics__value">независимые пружины tf</span></div>
+          <div class="product-characteristics"><span class="product-characteristics__name">Жесткость:</span><span class="product-characteristics__value">средняя</span></div>
+          <div class="product-characteristics"><span class="product-characteristics__name">Жесткость 2-ой стороны:</span><span class="product-characteristics__value">мягкая</span></div>
+          <div class="product-characteristics"><span class="product-characteristics__name">Макс. вес на одно спальное место</span><span class="product-characteristics__value">105кг</span></div>
+          <div class="product-characteristics"><span class="product-characteristics__name">Высота матрасы </span><span class="product-characteristics__value">19см</span></div>
+          <div class="product-characteristics"><span class="product-characteristics__name">Чехол </span><span class="product-characteristics__value">трикотаж с объёмной стежкой</span></div>
+          <div class="product-characteristics"><span class="product-characteristics__name">Съёмный чехол</span><span class="product-characteristics__value">Да</span></div>
+          <div class="product-characteristics"><span class="product-characteristics__name">Гарантия</span><span class="product-characteristics__value">3 года</span></div>
+        </div>
+        <div class="hr hr_gray"></div>
+        <div class="content product-popup__content product-popup__content_not_margin">
+          <h3 class="product-popup__content-title">Отзывы</h3>
+          <dl class="product-reviews">
+            <dt class="product-reviews__name">Виктор</dt>
+            <dd class="product-reviews__review">1 Месяц назад купил такой матрац и очень доволен. А больше порадовала его цена, т.к. брал со скидкой. Очень удобный и комфортный матрац. Всем советую!</dd>
+            <dt class="product-reviews__name">Юрий Антонов</dt>
+            <dd class="product-reviews__review">Матрас стоит своих денег, сделан качественно.</dd>
+            <dt class="product-reviews__name">Сергей</dt>
+            <dd class="product-reviews__review">Не знаете, такой наматрасник можно скручивать в рулон?</dd>
+          </dl><a href="javascript:;" class="product-popup__allreviews">Читать все</a>
+          <button class="button button_red product-popup__review-button">Оставить свой отзыв</button>
         </div>
       </div>
+      <!-- END PRODUCT-POPUP -->
+      <!-- BEGIN FILTER-POPUP -->
       <div class="filter-popup popup">
         <h2 class="filter__titile filter-popup__title">Фильтр по параметрам</h2>
         <form action="/" class="filter__form">
           <div class="filter__input-group">
-            <label for="type" class="filter__label">Тип</label>
-            <select name="type" id="type" class="filter__control filter__control_select wide">
+            <label for="popup-type" class="filter__label">Тип</label>
+            <select name="popup-type" id="popup-type" class="filter__control filter__control_select wide">
               <option value="1">Любой</option>
               <option value="2">Не любой</option>
               <option value="3">Конкретный</option>
@@ -371,8 +472,8 @@
             </select>
           </div>
           <div class="filter__input-group">
-            <label for="brend" class="filter__label">Бренд</label>
-            <select name="brend" id="brend" class="filter__control filter__control_select wide">
+            <label for="popup-brend" class="filter__label">Бренд</label>
+            <select name="popup-brend" id="popup-brend" class="filter__control filter__control_select wide">
               <option value="1">Все</option>
               <option value="2">Не любой</option>
               <option value="3">Конкретный</option>
@@ -382,20 +483,20 @@
           <div class="filter__input-group">
             <label class="filter__label">Цена в рублях</label>
             <div class="filter__control_double">
-              <input type="number" name="pricefrom" placeholder="от" class="filter__control filter__control_input filter__control_first"><span class="filter__glue_input"></span>
-              <input type="number" name="priceto" placeholder="до" class="filter__control filter__control_input filter__control_last">
+              <input type="number" name="popup-pricefrom" placeholder="от" class="filter__control filter__control_input filter__control_first"><span class="filter__glue_input"></span>
+              <input type="number" name="popup-priceto" placeholder="до" class="filter__control filter__control_input filter__control_last">
             </div>
           </div>
           <div class="filter__input-group">
             <label class="filter__label">Размер в см</label>
             <div class="filter__control_double">
-              <input type="number" name="width" placeholder="Ширина" class="filter__control filter__control_input filter__control_first"><span class="filter__glue_input"></span>
-              <input type="number" name="height" placeholder="Высота" class="filter__control filter__control_input filter__control_last">
+              <input type="number" name="popup-width" placeholder="Ширина" class="filter__control filter__control_input filter__control_first"><span class="filter__glue_input"></span>
+              <input type="number" name="popup-height" placeholder="Высота" class="filter__control filter__control_input filter__control_last">
             </div>
           </div>
           <div class="filter__input-group">
-            <label for="first-side" class="filter__label">Жесткость 1-ой стороны</label>
-            <select name="first-side" id="first-side" class="filter__control filter__control_select wide">
+            <label for="popup-first-side" class="filter__label">Жесткость 1-ой стороны</label>
+            <select name="popup-first-side" id="popup-first-side" class="filter__control filter__control_select wide">
               <option value="1">Любой</option>
               <option value="2">Не любой</option>
               <option value="3">Конкретный</option>
@@ -403,8 +504,8 @@
             </select>
           </div>
           <div class="filter__input-group">
-            <label for="last-side" class="filter__label">Жесткость 2-ой стороны</label>
-            <select name="last-side" id="last-side" class="filter__control filter__control_select wide">
+            <label for="popup-last-side" class="filter__label">Жесткость 2-ой стороны</label>
+            <select name="popup-last-side" id="popup-last-side" class="filter__control filter__control_select wide">
               <option value="1">Все</option>
               <option value="2">Не любой</option>
               <option value="3">Конкретный</option>
@@ -417,6 +518,7 @@
           <p class="filter__text"><a href="#" class="filter__link">Наш менеджер может помочь вам</a> с любым дополнительным параметром</p>
         </div>
       </div>
+      <!-- END FILTER-POPUP -->
     </div><!--[if lt IE 9]>
     <script src="libs/html5shiv/es5-shim.min.js"></script>
     <script src="libs/html5shiv/html5shiv.min.js"></script>

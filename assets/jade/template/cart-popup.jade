@@ -1,0 +1,20 @@
+// BEGIN CART-POPUP 
+.cart-popup.popup
+	h2.cart-popup__title Корзина
+	p.cart-popup__description В случае, если у Вас появились какие то проблемы 
+		a(href="tel:+74953572984").cart-popup__calllink +7(495) 357-29-84
+	include ./cart-item.jade
+	include ./cart-item.jade
+	.cart-popup__footer
+		.cart-total
+			span.cart-total__title Итого:
+			ul.cart-total__price
+				li.cart-total__oldprice 48 996 руб.
+				li.cart-total__newprice 39 992 руб.
+		form(action="/").cart-form.cart-popup__form
+			i.icon.icon_phone.cart-form__icon
+			input(type="text" placeholder="Введите телефон").cart-form__input.data-inputmask
+			button(type="submit").button.button_green.cart-form__button Оформить заказ
+		p.cart-popup__text
+			a(href="javascript:;").cart-popup__link Заполнить самостоятельно
+// END CART-POPUP 

@@ -1,0 +1,19 @@
+// BEGIN ORDER POPUP 
+.order-popup.popup
+	h2.order-popup__title Оформление заказа
+	form(action="/").order-popup__form
+		label.order-popup__label Ваше имя и фамилия*
+			input(type="text").order-popup__input
+		p.order-popup__clarification Необходимы для заполнения гарантии
+		label.order-popup__label Телефон*
+			input(type="text").order-popup__input
+		p.order-popup__clarification Желательно указать несколько телефонов
+		label.order-popup__label Адрес доставки*
+			textarea(name="addres", rows="4").order-popup__textarea
+		p.order-popup__optional Необязательные поля
+		label.order-popup__label.order-popup__label_margin_bottom E-mail
+			input(type="text").order-popup__input
+		label.order-popup__label Примечания
+			textarea(name="notes", rows="4").order-popup__textarea
+		button(type="submit").button.button_green.order-popup__button Отправить заказ
+// END ORDER POPUP 

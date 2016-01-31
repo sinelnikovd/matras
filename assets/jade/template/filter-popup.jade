@@ -1,0 +1,50 @@
+// BEGIN FILTER-POPUP 
+.filter-popup.popup
+	h2.filter__titile.filter-popup__title Фильтр по параметрам
+	form(action="/").filter__form
+		.filter__input-group
+			label(for="popup-type").filter__label Тип
+			select(name="popup-type")#popup-type.filter__control.filter__control_select.wide
+				option(value="1") Любой
+				option(value="2") Не любой
+				option(value="3") Конкретный
+				option(value="4") Всякий
+		.filter__input-group
+			label(for="popup-brend").filter__label Бренд
+			select(name="popup-brend")#popup-brend.filter__control.filter__control_select.wide
+				option(value="1") Все
+				option(value="2") Не любой
+				option(value="3") Конкретный
+				option(value="4") Всякий
+		.filter__input-group
+			label.filter__label Цена в рублях
+			.filter__control_double
+				input(type="number" name="popup-pricefrom" placeholder="от").filter__control.filter__control_input.filter__control_first
+				span.filter__glue_input
+				input(type="number" name="popup-priceto" placeholder="до").filter__control.filter__control_input.filter__control_last
+		.filter__input-group
+			label.filter__label Размер в см
+			.filter__control_double
+				input(type="number" name="popup-width" placeholder="Ширина").filter__control.filter__control_input.filter__control_first
+				span.filter__glue_input
+				input(type="number" name="popup-height" placeholder="Высота").filter__control.filter__control_input.filter__control_last
+		.filter__input-group
+			label(for="popup-first-side").filter__label Жесткость 1-ой стороны
+			select(name="popup-first-side")#popup-first-side.filter__control.filter__control_select.wide
+				option(value="1") Любой
+				option(value="2") Не любой
+				option(value="3") Конкретный
+				option(value="4") Всякий
+		.filter__input-group
+			label(for="popup-last-side").filter__label Жесткость 2-ой стороны
+			select(name="popup-last-side")#popup-last-side.filter__control.filter__control_select.wide
+				option(value="1") Все
+				option(value="2") Не любой
+				option(value="3") Конкретный
+				option(value="4") Всякий
+	.filter__footer
+		button(type="submit").button.button_green.filter__button Подобрать
+		p.filter__text
+			a(href="#").filter__link Наш менеджер может помочь вам
+			|  с любым дополнительным параметром
+// END FILTER-POPUP 
