@@ -185,6 +185,132 @@
     <div class="cart"><i class="icon icon_cart cart__icon"></i><span class="cart__count">2</span></div>
     <!-- END CART -->
     <div class="hidden">
+      <!-- BEGIN CART-POPUP -->
+      <div class="cart-popup popup">
+        <h2 class="cart-popup__title">Корзина</h2>
+        <p class="cart-popup__description">В случае, если у Вас появились какие то проблемы <a href="tel:+74953572984" class="cart-popup__calllink">+7(495) 357-29-84</a></p>
+        <!-- BEGIN CART-ITEM -->
+        <div class="cart-item">
+          <div class="cart-item__preview"><img src="img/hit_matras-Promtex-Orient-Soft-Temple.jpg" alt="" class="cart-item__picture"></div>
+          <div class="cart-item__description"><a href="#" class="cart-item__link">Eco hard 1 TFK</a><span class="cart-item__price">5996 руб.</span><span class="cart-item__point"><i class="icon icon_point">.</i></span><span class="cart-item__size">60x160</span>
+            <div class="cart-item__controls"><span class="cart-item__minus">–</span>
+              <input type="number" value="1" class="cart-item__count"><span class="cart-item__plus">+</span><span class="cart-item__delete"><i class="icon icon_delete"></i></span>
+            </div>
+          </div>
+        </div>
+        <!-- END CART-ITEM -->
+        <!-- BEGIN CART-ITEM -->
+        <div class="cart-item">
+          <div class="cart-item__preview"><img src="img/hit_matras-Promtex-Orient-Soft-Temple.jpg" alt="" class="cart-item__picture"></div>
+          <div class="cart-item__description"><a href="#" class="cart-item__link">Eco hard 1 TFK</a><span class="cart-item__price">5996 руб.</span><span class="cart-item__point"><i class="icon icon_point">.</i></span><span class="cart-item__size">60x160</span>
+            <div class="cart-item__controls"><span class="cart-item__minus">–</span>
+              <input type="number" value="1" class="cart-item__count"><span class="cart-item__plus">+</span><span class="cart-item__delete"><i class="icon icon_delete"></i></span>
+            </div>
+          </div>
+        </div>
+        <!-- END CART-ITEM -->
+        <div class="cart-popup__footer">
+          <div class="cart-total"><span class="cart-total__title">Итого:</span>
+            <ul class="cart-total__price">
+              <li class="cart-total__oldprice">48 996 руб.</li>
+              <li class="cart-total__newprice">39 992 руб.</li>
+            </ul>
+          </div>
+          <form action="/" class="cart-form cart-popup__form"><i class="icon icon_phone cart-form__icon"></i>
+            <input type="text" placeholder="Введите телефон" class="cart-form__input data-inputmask">
+            <button type="submit" class="button button_green cart-form__button">Оформить заказ</button>
+          </form>
+          <p class="cart-popup__text"><a href="javascript:;" class="cart-popup__link">Заполнить самостоятельно</a></p>
+        </div>
+      </div>
+      <!-- END CART-POPUP -->
+      <!-- BEGIN ORDER POPUP -->
+      <div class="order-popup popup">
+        <h2 class="order-popup__title">Оформление заказа</h2>
+        <form action="/" class="order-popup__form">
+          <label class="order-popup__label">Ваше имя и фамилия*
+            <input type="text" class="order-popup__input">
+          </label>
+          <p class="order-popup__clarification">Необходимы для заполнения гарантии</p>
+          <label class="order-popup__label">Телефон*
+            <input type="text" class="order-popup__input">
+          </label>
+          <p class="order-popup__clarification">Желательно указать несколько телефонов</p>
+          <label class="order-popup__label">Адрес доставки*
+            <textarea name="addres" rows="4" class="order-popup__textarea"></textarea>
+          </label>
+          <p class="order-popup__optional">Необязательные поля</p>
+          <label class="order-popup__label order-popup__label_margin_bottom">E-mail
+            <input type="text" class="order-popup__input">
+          </label>
+          <label class="order-popup__label">Примечания
+            <textarea name="notes" rows="4" class="order-popup__textarea"></textarea>
+          </label>
+          <button type="submit" class="button button_green order-popup__button">Отправить заказ</button>
+        </form>
+      </div>
+      <!-- END ORDER POPUP -->
+      <!-- BEGIN FILTER-POPUP -->
+      <div class="filter-popup popup">
+        <h2 class="filter__titile filter-popup__title">Фильтр по параметрам</h2>
+        <form action="/" class="filter__form">
+          <div class="filter__input-group">
+            <label for="popup-type" class="filter__label">Тип</label>
+            <select name="popup-type" id="popup-type" class="filter__control filter__control_select wide">
+              <option value="1">Любой</option>
+              <option value="2">Не любой</option>
+              <option value="3">Конкретный</option>
+              <option value="4">Всякий</option>
+            </select>
+          </div>
+          <div class="filter__input-group">
+            <label for="popup-brend" class="filter__label">Бренд</label>
+            <select name="popup-brend" id="popup-brend" class="filter__control filter__control_select wide">
+              <option value="1">Все</option>
+              <option value="2">Не любой</option>
+              <option value="3">Конкретный</option>
+              <option value="4">Всякий</option>
+            </select>
+          </div>
+          <div class="filter__input-group">
+            <label class="filter__label">Цена в рублях</label>
+            <div class="filter__control_double">
+              <input type="number" name="popup-pricefrom" placeholder="от" class="filter__control filter__control_input filter__control_first"><span class="filter__glue_input"></span>
+              <input type="number" name="popup-priceto" placeholder="до" class="filter__control filter__control_input filter__control_last">
+            </div>
+          </div>
+          <div class="filter__input-group">
+            <label class="filter__label">Размер в см</label>
+            <div class="filter__control_double">
+              <input type="number" name="popup-width" placeholder="Ширина" class="filter__control filter__control_input filter__control_first"><span class="filter__glue_input"></span>
+              <input type="number" name="popup-height" placeholder="Высота" class="filter__control filter__control_input filter__control_last">
+            </div>
+          </div>
+          <div class="filter__input-group">
+            <label for="popup-first-side" class="filter__label">Жесткость 1-ой стороны</label>
+            <select name="popup-first-side" id="popup-first-side" class="filter__control filter__control_select wide">
+              <option value="1">Любой</option>
+              <option value="2">Не любой</option>
+              <option value="3">Конкретный</option>
+              <option value="4">Всякий</option>
+            </select>
+          </div>
+          <div class="filter__input-group">
+            <label for="popup-last-side" class="filter__label">Жесткость 2-ой стороны</label>
+            <select name="popup-last-side" id="popup-last-side" class="filter__control filter__control_select wide">
+              <option value="1">Все</option>
+              <option value="2">Не любой</option>
+              <option value="3">Конкретный</option>
+              <option value="4">Всякий</option>
+            </select>
+          </div>
+        </form>
+        <div class="filter__footer">
+          <button type="submit" class="button button_green filter__button">Подобрать</button>
+          <p class="filter__text"><a href="#" class="filter__link">Наш менеджер может помочь вам</a> с любым дополнительным параметром</p>
+        </div>
+      </div>
+      <!-- END FILTER-POPUP -->
     </div><!--[if lt IE 9]>
     <script src="libs/html5shiv/es5-shim.min.js"></script>
     <script src="libs/html5shiv/html5shiv.min.js"></script>

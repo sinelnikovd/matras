@@ -136,6 +136,11 @@ $(document).ready(function() {
 	});
 
 
+	$('.back-to-top__link').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
+
 });
 
 	//SVG Fallback
