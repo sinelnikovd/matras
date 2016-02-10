@@ -4,7 +4,12 @@ block title
 	title Каталог 2
 
 block style
-	link(rel="stylesheet" href="_search-result.min.css")
+	link(rel="stylesheet" href="css/main.css")
+	link(rel="stylesheet" href="css/breadcrumbs.css")
+	link(rel="stylesheet" href="css/sorting.css")
+	link(rel="stylesheet" href="css/pagination.css")
+	link(rel="stylesheet" href="css/product-popup.css")
+	link(rel="stylesheet" href="css/search-result.css")
 
 block content
 	include ./template/header.jade
@@ -54,6 +59,8 @@ block content
 
 block popup
 	include ./template/cart-popup.jade
+
+	include ./template/product-popup.jade
 
 	include ./template/order-popup.jade
 

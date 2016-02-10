@@ -1,0 +1,200 @@
+/* .catalog-miniature-item */
+.catalog-miniature-item {
+  text-align: center;
+  padding: 20px 0 25px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.catalog-miniature-item_last {
+  border-left: 1px solid #faf0e4;
+  margin-left: -1px; }
+
+.catalog-miniature-item__link {
+  text-decoration: none; }
+
+.catalog-miniature-item__picture {
+  height: 65px; }
+
+.catalog-miniature-item__text {
+  font-family: 'ProximaNovaBold', sans-serif;
+  font-size: 14px;
+  color: #037bd2;
+  margin-top: 7px;
+  border-bottom: 1px solid #d9e7f8;
+  line-height: .8;
+  display: inline-block; }
+
+/* end .catalog-miniature-item */
+/* .catalog-miniature-row */
+.catalog-miniature-row {
+  border-bottom: 1px solid #faf0e4; }
+  .catalog-miniature-row::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.catalog-miniature-row_last {
+  border-bottom: 0; }
+
+.catalog-miniature-row__item {
+  float: left;
+  width: 50%; }
+
+/* end .catalog-miniature-row */
+/* .section-main-catalog-andto */
+.section-main-catalog-andto {
+  text-align: center; }
+
+.section-main-catalog-andto__text {
+  margin: 0;
+  font-family: 'ProximaNovaSemibold', sans-serif;
+  font-size: 14px; }
+
+.section-main-catalog-andto__link {
+  font-family: "ProximaNovaRegular", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  color: #4c8dee;
+  text-decoration: underline; }
+  .section-main-catalog-andto__link:hover {
+    text-decoration: none; }
+
+/* .section-main-catalog-andto */
+/* .section-main-catalog */
+.section-main-catalog__andto {
+  background-color: #f9ead5;
+  padding: 9px 0; }
+
+/* end .section-main-catalog */
+/* .section-hits */
+.section-hits {
+  text-align: center;
+  padding: 34px 0 18px; }
+
+.section-hits__title {
+  font-size: 22px;
+  font-weight: normal;
+  margin: 0; }
+
+.section-hits__product-cards {
+  margin-top: 25px; }
+
+.section-hits__link {
+  color: #037bd2;
+  font-size: 14px;
+  margin: 6px 0 0;
+  display: inline-block; }
+  .section-hits__link:hover {
+    color: #024f87; }
+
+/* end .section-hits */
+/* .popular-size */
+.popular-size {
+  list-style-type: none;
+  padding: 0;
+  font-size: 0; }
+  .popular-size::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.popular-size__item {
+  display: inline-block;
+  border-top: 1px solid #f8e8ce;
+  border-bottom: 1px solid #f8e8ce;
+  border-left: 1px solid #f8e8ce; }
+
+.popular-size__item_last {
+  border-right: 1px solid #f8e8ce; }
+
+.popular-size__link {
+  display: inline-block;
+  padding: 3px 10px;
+  color: #038ef3;
+  font-size: 14px;
+  text-decoration: none; }
+  .popular-size__link:hover {
+    color: #024f87; }
+
+/* end .popular-size */
+/* .section-popular-size */
+.section-popular-size {
+  padding: 18px 0 14px;
+  background-color: #fdf6ec;
+  text-align: center; }
+
+.section-popular-size__title {
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0; }
+
+.section-popular-size__popular-size {
+  margin-top: 18px; }
+
+.section-popular-size__link {
+  color: #037bd2;
+  font-size: 14px;
+  margin: 16px 0 0;
+  display: inline-block; }
+  .section-popular-size__link:hover {
+    color: #024f87; }
+
+/* end .section-popular-size */
+/* .about-items */
+.about-items {
+  margin-top: 5px; }
+  .about-items::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+/* end .about-items */
+/* .about-item */
+.about-item {
+  float: left;
+  width: 50%;
+  height: 105px;
+  position: relative;
+  padding: 30px 20px 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.about-item__number {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-family: "ProximaNovaThin", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 106px;
+  line-height: 1;
+  color: #f4e9d4;
+  z-index: -1; }
+
+.about-item__text {
+  font-family: "ProximaNovaBold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  margin: 0; }
+
+/* end .about-item */
+/* .section-main-about */
+.section-main-about {
+  padding: 30px 0 25px;
+  text-align: center; }
+
+.section-main-about__title {
+  font-size: 22px;
+  font-weight: normal;
+  margin: 0; }
+
+.section-main-about__link {
+  color: #037bd2;
+  font-size: 14px;
+  margin: 0;
+  display: inline-block; }
+  .section-main-about__link:hover {
+    color: #024f87; }
+
+/* end .section-main-about */

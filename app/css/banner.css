@@ -1,0 +1,43 @@
+/* banner */
+.banner {
+  position: fixed;
+  bottom: 0;
+  z-index: 20;
+  background-color: #EE5A4E;
+  width: 100%;
+  min-height: 75px; }
+  .banner + .cart {
+    bottom: 90px; }
+
+.banner__close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 22px;
+  color: #fff;
+  opacity: .5;
+  cursor: pointer; }
+  .banner__close:hover {
+    opacity: .8; }
+
+.banner__link {
+  width: 100%;
+  display: table;
+  color: #fff; }
+  .banner__link:hover {
+    text-decoration: none; }
+
+.banner__picture {
+  display: table-cell;
+  vertical-align: middle; }
+
+.banner__text {
+  width: 80%;
+  display: table-cell;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 20px;
+  font-size: 14px; }
+
+/* end banner */

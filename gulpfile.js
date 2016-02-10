@@ -32,18 +32,32 @@ function notifyLiveReload(event) {
 	});
 }
 
+gulp.task('tempstyles', function () {
+	gulp.src('assets/sass/template/*.sass')
+	.pipe(sass({
+		includePaths: require('node-bourbon').includePaths
+	})).on('error', sass.logError)
+	//.pipe(rename({suffix: '.min', prefix : '_'}))
+	.pipe(autoprefixer({
+		browsers: ['last 15 versions'],
+		cascade: false
+	}))
+	//.pipe(minifycss())
+	.pipe(gulp.dest('app/css'));
+});
+
 gulp.task('styles', function () {
 	gulp.src('assets/sass/*.sass')
 	.pipe(sass({
 		includePaths: require('node-bourbon').includePaths
 	})).on('error', sass.logError)
-	.pipe(rename({suffix: '.min', prefix : '_'}))
+	//.pipe(rename({suffix: '.min', prefix : '_'}))
 	.pipe(autoprefixer({
 		browsers: ['last 15 versions'],
 		cascade: false
 	}))
-	.pipe(minifycss())
-	.pipe(gulp.dest('app'));
+	//.pipe(minifycss())
+	.pipe(gulp.dest('app/css'));
 });
 
 gulp.task('jade', function() {
@@ -85,6 +99,6 @@ gulp.task('watch', function() {
 	gulp.watch('assets/app/*.html', notifyLiveReload);
 });
 
-gulp.task('default', [ 'sprite' ,'styles', 'jade', 'express', 'livereload', 'watch'], function() {
+gulp.task('default', [ 'sprite' ,'tempstyles' ,'styles', 'jade', 'express', 'livereload', 'watch'], function() {
 
 });

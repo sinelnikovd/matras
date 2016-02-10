@@ -22,7 +22,7 @@ $(document).ready(function() {
 		closeMarkup: '<button title="%title%" type="button" class="mfp-close">1</button>'
 	});
 
-	$('.product-card__link').magnificPopup({
+	$('.product-card__link, .cart-item__link').magnificPopup({
 		items: {
 			src: '.product-popup',
 			type: 'inline'
@@ -143,7 +143,7 @@ $(document).ready(function() {
 
 });
 
-	//SVG Fallback
+/*	//SVG Fallback
 if (!Modernizr.svg) {
 	// wrap this in a closure to not expose any conflicts
 	(function() {
@@ -157,4 +157,4 @@ if (!Modernizr.svg) {
 			}
 		}
 	})();
-}
+}*/

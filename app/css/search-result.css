@@ -1,0 +1,36 @@
+.search-result {
+  padding: 9px 10px 12px;
+  background-color: #fbf6ec;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.search-result__form {
+  position: relative; }
+
+.search-result__input {
+  height: 40px;
+  padding: 6px 10px;
+  border: 1px solid #f9ead3;
+  background-color: #fff;
+  font-size: 12px;
+  color: #555555;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.search-result__button {
+  top: 0;
+  right: 0;
+  font-size: 16px;
+  padding: 9px 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0;
+  position: absolute;
+  cursor: pointer;
+  background-color: transparent;
+  color: #ce5b4f; }
+
+.search-result__text {
+  font-size: 14px;
+  margin: 10px 0 0; }

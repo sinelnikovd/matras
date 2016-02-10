@@ -1,0 +1,19 @@
+/* .back-to-top */
+.back-to-top {
+  border-top: 1px solid #e9ddc6; }
+
+.back-to-top__link {
+  display: block;
+  text-align: center;
+  padding: 12px 0;
+  color: #ce5b4f;
+  font-size: 14px;
+  text-decoration: none; }
+  .back-to-top__link:hover {
+    text-decoration: underline; }
+
+.back-to-top__icon {
+  vertical-align: top;
+  margin-left: 5px; }
+
+/* end .back-to-top */
